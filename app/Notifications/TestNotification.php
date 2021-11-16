@@ -57,7 +57,7 @@ class TestNotification extends Notification
         return [
             'title' => 'My Title Here',
         'icon' => '/storage/users/default.png',
-        'body' => 'This is the body content of the notification... Yada yada yada',
+        'body' => 'Yada yada hi dharmasya, glanir bhawti bharta abhuthnam dharmasya tadatmanav srijamiyhum',
         'link' => 'https://google.com'
         ];
     }
