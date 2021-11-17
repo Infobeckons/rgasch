@@ -186,6 +186,8 @@ return [
         Lab404\Impersonate\ImpersonateServiceProvider::class,
         Wave\WaveServiceProvider::class,
         DevDojo\Themes\ThemesServiceProvider::class,
+        TCG\Voyager\VoyagerServiceProvider::class,
+        Laravel\Tinker\TinkerServiceProvider::class,
 
         /*
          * Application Service Providers...
