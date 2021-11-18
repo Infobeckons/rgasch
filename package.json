@@ -19,6 +19,7 @@
         "sass-loader": "^12.1.0"
     },
     "dependencies": {
+        "voyager": "^0.4.13",
         "vue": "^3.2.22",
         "vue-loader": "^15.9.8"
     }
