@@ -1,5 +1,13 @@
 import 'alpinejs';
+require('./bootstrap');
 
+window.Vue = require('vue');
+
+Vue.component('example-component', require('./components/ExampleComponent.vue'));
+
+const app = new Vue({
+    el: '#app'
+});
 window.inIframe = function() {
     try {
         return window.self !== window.top;

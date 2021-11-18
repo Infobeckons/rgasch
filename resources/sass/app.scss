@@ -1,10 +1,8 @@
-// Bootstrap
-@import 'node_modules/bootstrap/scss/bootstrap';
-
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
 // Variables
 @import 'variables';
 
-
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
