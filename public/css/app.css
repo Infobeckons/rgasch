@@ -7459,7 +7459,6 @@ textarea.form-control-lg {
 .px-4 {
   padding-right: 1.5rem !important;
   padding-left: 1.5rem !important;
-  margin-bottom: 30px !important;
 }
 
 .px-5 {
@@ -11287,4 +11286,10 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+
+
+
+.mt-2.flex-shrink-0.w-full.sm\:mt-0.sm\:w-auto {
+  margin-bottom: 30px !important;
 }
