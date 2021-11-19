@@ -36,6 +36,9 @@ Route::group(['middleware' => 'wave'], function () {
 	Route::get('dashboard', '\Wave\Http\Controllers\DashboardController@index')->name('wave.dashboard');
 });
 
+// Forget one
+// ResponseCache::forget('dashboard', '\Wave\Http\Controllers\DashboardController@index')->name('wave.dashboard');
+
 Route::group(['middleware' => 'auth'], function(){
 	Route::get('settings/{section?}', '\Wave\Http\Controllers\SettingsController@index')->name('wave.settings');
 
