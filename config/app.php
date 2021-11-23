@@ -189,6 +189,7 @@ return [
         TCG\Voyager\VoyagerServiceProvider::class,
         Laravel\Tinker\TinkerServiceProvider::class,
         Larapack\Hooks\HooksServiceProvider::class,
+        Larapack\VoyagerHooks\VoyagerHooksServiceProvider::class,
 
         /*
          * Application Service Providers...
