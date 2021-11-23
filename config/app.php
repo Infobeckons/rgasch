@@ -188,6 +188,7 @@ return [
         DevDojo\Themes\ThemesServiceProvider::class,
         TCG\Voyager\VoyagerServiceProvider::class,
         Laravel\Tinker\TinkerServiceProvider::class,
+        Larapack\Hooks\HooksServiceProvider::class,
 
         /*
          * Application Service Providers...
