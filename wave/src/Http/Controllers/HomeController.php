@@ -15,7 +15,7 @@ class HomeController extends \App\Http\Controllers\Controller
     public function index()
     {
     	if(setting('auth.dashboard_redirect', true) != "null"){
-    		if(!\Auth::guest()){
+    		if(\Auth::guest()){
     			return redirect('dashboard');
     		}
     	}

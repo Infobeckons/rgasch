@@ -6,24 +6,6 @@ module.exports = {
         './assets/**/*.js',
       ],
     theme: {
-        screens: {
-            sm: '480px',
-            md: '768px',
-            lg: '976px',
-            xl: '1440px',
-          },
-          colors: {
-            gray: colors.coolGray,
-            blue: colors.lightBlue,
-            red: colors.rose,
-            pink: colors.fuchsia,
-          },
-          spacing: {
-            sm: '8px',
-            md: '12px',
-            lg: '16px',
-            xl: '24px',
-          },
         extend: {
             rotate: {
                 '-1': '-1deg',

@@ -16,7 +16,7 @@ require('laravel-mix-purgecss');
  |
  */
 
-mix.setPublicPath('../../../../public/themes/tailwind/')
-	.sass('assets/sass/app.scss', 'css')
-	.js('assets/js/app.js', 'js')
+mix.setPublicPath('../../../../public/themes/portfolio/')
+	.sass('assets/sass/app.scss', 'css/app.css')
+	.js('assets/js/app.js', 'js/app.js')
 	.tailwind('./tailwind.config.js');
