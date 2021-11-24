@@ -15,6 +15,27 @@
     <meta name="url" content="{{ url('/') }}">
 
     <link rel="icon" href="{{ setting('site.favicon', '/wave/favicon.png') }}" type="image/x-icon">
+    {{-- <link rel="shortcut icon" href="images/favicon.ico"> --}}
+
+    <!-- Bootstrap -->
+    {{-- <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" /> --}}
+    <link href="{{ asset('themes/' . $theme->folder . '/css/bootstrap.min.css') }}" rel="stylesheet">
+    
+    <!-- Tobii Lightbox -->
+    {{-- <link href="css/tobii.min.css" rel="stylesheet" type="text/css" /> --}}
+    <link href="{{ asset('themes/' . $theme->folder . '/css/tobii.min.css') }}" rel="stylesheet">
+
+    <!-- Icons -->
+    {{-- <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" /> --}}
+    <link href="{{ asset('themes/' . $theme->folder . '/css/materialdesignicons.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+
+    <!-- Main Css -->
+    {{-- <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" /> --}}
+    <link href="{{ asset('themes/' . $theme->folder . '/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('themes/' . $theme->folder . '/css/app.css') }}" rel="stylesheet">
+    {{-- <link href="css/colors/default.css" rel="stylesheet" id="color-opt"> --}}
+    <link href="{{ asset('themes/' . $theme->folder . '/css/colors/default.css') }}" rel="stylesheet">
 
     {{-- Social Share Open Graph Meta Tags --}}
     @if(isset($seo->title) && isset($seo->description) && isset($seo->image))
@@ -43,7 +64,7 @@
     @endif
 
     <!-- Styles -->
-    <link href="{{ asset('themes/' . $theme->folder . '/css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('themes/' . $theme->folder . '/css/style.css') }}" rel="stylesheet">
 </head>
 <body class="flex flex-col min-h-screen @if(Request::is('/')){{ 'bg-white' }}@else{{ 'bg-gray-50' }}@endif @if(config('wave.dev_bar')){{ 'pb-10' }}@endif">
 
