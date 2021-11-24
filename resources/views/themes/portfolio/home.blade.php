@@ -30,18 +30,20 @@
                 <div class="flex w-full mb-16 lg:w-1/2 lg:mb-0">
 
                     <div class="relative invisible transition-none duration-1000 delay-100 transform translate-x-12 opacity-0" data-replace='{ "transition-none": "transition-all", "invisible": "visible", "translate-x-12": "translate-y-0", "opacity-0": "opacity-100" }'>
-                        <img src="{{ Voyager::image(theme('home_promo_image')) }}" class="w-full max-w-3xl sm:w-auto">
+                        <img src="{{ Voyager::image(theme('home_promo_image')) }}" class="w-full max-w-1xl sm:w-auto">
                     </div>
 
                 </div>
             </div>
         </div>
-
-
+        
+        
 
     </div>
+  
+   
 
-    {{-- <div class="relative z-40 -mt-64">
+   {{-- <div class="relative z-40 -mt-64">
 
         <svg viewBox="0 0 120 28" class="-mt-64">
             <defs>
@@ -51,10 +53,10 @@
             <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
             <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
         </svg>
-    </div>
+    </div> --}}
 
     {{-- FEATURES SECTION --}}
-    
+{{--     
     <section class="relative z-40 w-full pt-10 pb-16 lg:pt-5 xl:-mt-24 bg-gradient-to-b from-wave-500 via-wave-600 to-wave-400">
 
         <div class="absolute top-0 left-0 z-10 w-full h-full transform -translate-x-1/2 opacity-10">
@@ -185,7 +187,7 @@
             </svg>
 
         </div>
-    </div>
+    </div> --}}
     <!-- END OF TESTIMONIALS SECTION --> 
 
 
@@ -525,7 +527,7 @@
 
 
     <!-- BEGINNING OF PRICING SECTION -->
-    <div id="pricing" class="relative">
+    {{-- <div id="pricing" class="relative">
 
         <div class="relative z-20 px-8 pb-8 mx-auto max-w-7xl xl:px-5">
             <div class="w-full text-left sm:text-center">
@@ -537,7 +539,7 @@
 
             <p class="w-full my-8 text-left text-gray-500 sm:my-10 sm:text-center">All plans are fully configurable in the Admin Area.</p>
         </div>
-    </div>
+    </div> --}}
     <!-- END OF PRICING SECTION -->
 
 @endsection
