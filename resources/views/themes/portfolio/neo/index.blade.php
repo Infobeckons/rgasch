@@ -26,11 +26,15 @@
     </head>
 
     <body>
+        {{-- @extends('theme::layouts.app')
+
+@section('content') --}}
+
         <!-- Navbar STart -->
         <header id="topnav" class="defaultscroll sticky">
             <div class="container">
                 <!-- Logo container-->
-                <a class="logo" href="index.html">
+                <a class="logo" href="{{('index')}}">
                     <img src="{{asset('themes/portfolio/neo/images/logo.png')}}" class="me-1" height="28" alt="">
                 </a>
                 <!-- End Logo container-->
@@ -54,76 +58,76 @@
                         <li class="has-submenu parent-menu-item">
                             <a href="javascript:void(0)">Home</a><span class="menu-arrow"></span>
                             <ul class="submenu">
-                                <li><a href="{{theme('wave.index')}}" class="sub-menu-item">Home One</a></li>
-                                <li><a href="{{theme('wave.index-two')}}" class="sub-menu-item">Home Two</a></li>
-                                <li><a href="{{theme('wave.index-three')}}" class="sub-menu-item">Home Three</a></li>
-                                <li><a href="{{theme('wave.index-four')}}" class="sub-menu-item">Home Four</a></li>
-                                <li><a href="{{theme('wave.index-five')}}" class="sub-menu-item">Home Five</a></li>
-                                <li><a href="{{theme('wave.index-six')}}" class="sub-menu-item">Home Six</a></li>
-                                <li><a href="{{theme('wave.index-seven')}}" class="sub-menu-item">Home Seven</a></li>
-                                <li><a href="{{theme('wave.index-eight')}}" class="sub-menu-item">Home Eight</a></li>
-                                <li><a href="{{theme('wave.index-boxed')}}" class="sub-menu-item">Home Boxed</a></li>
+                                <li><a href="{{('index')}}" class="sub-menu-item">Home One</a></li>
+                                <li><a href="{{('index-two')}}" class="sub-menu-item">Home Two</a></li>
+                                {{-- <li><a href="{{('index-three')}}" class="sub-menu-item">Home Three</a></li>
+                                <li><a href="{{('index-four')}}" class="sub-menu-item">Home Four</a></li>
+                                <li><a href="{{('index-five')}}" class="sub-menu-item">Home Five</a></li>
+                                <li><a href="{{('index-six')}}" class="sub-menu-item">Home Six</a></li>
+                                <li><a href="{{('index-seven')}}" class="sub-menu-item">Home Seven</a></li>
+                                <li><a href="{{('index-eight')}}" class="sub-menu-item">Home Eight</a></li>
+                                <li><a href="{{('index-boxed')}}" class="sub-menu-item">Home Boxed</a></li> --}}
                             </ul>
                         </li>
 
                         <li class="has-submenu parent-menu-item">
                             <a href="javascript:void(0)">Company</a><span class="menu-arrow"></span>
                             <ul class="submenu">
-                                <li><a href="aboutus.html" class="sub-menu-item">About us</a></li>
-                                <li><a href="services.html" class="sub-menu-item">Services</a></li>
-                                <li><a href="team.html" class="sub-menu-item">Team</a></li>
+                                <li><a href="{{('aboutus')}}" class="sub-menu-item">About us</a></li>
+                                <li><a href="{{('services')}}" class="sub-menu-item">Services</a></li>
+                                <li><a href="{{('team')}}" class="sub-menu-item">Team</a></li>
                             </ul>
                         </li>
 
                         <li class="has-submenu parent-parent-menu-item">
-                            <a href="javascript:void(0)">Portfolio</a><span class="menu-arrow"></span>
+                            {{-- <a href="javascript:void(0)">Portfolio</a><span class="menu-arrow"></span> --}}
                             <ul class="submenu">
-                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Classic </a><span class="submenu-arrow"></span>
-                                    <ul class="submenu">
-                                        <li><a href="portfolio-classic-two.html" class="sub-menu-item"> Classic Two Col</a></li>
-                                        <li><a href="portfolio-classic-three.html" class="sub-menu-item"> Classic Three Col</a></li>
-                                        <li><a href="portfolio-classic-four.html" class="sub-menu-item"> Classic Four Col</a></li>
-                                        <li><a href="portfolio-classic-five.html" class="sub-menu-item"> Classic Five Col</a></li>
-                                        <li><a href="portfolio-classic-six.html" class="sub-menu-item"> Classic Six Col</a></li>
-                                    </ul>
-                                </li>
+                                {{-- <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Classic </a><span class="submenu-arrow"></span> --}}
+                                    {{-- <ul class="submenu">
+                                        <li><a href="{{('portfolio-classic-two')}}" class="sub-menu-item"> Classic Two Col</a></li>
+                                        <li><a href="{{('portfolio-classic-three')}}" class="sub-menu-item"> Classic Three Col</a></li>
+                                        <li><a href="{{('portfolio-classic-four')}}" class="sub-menu-item"> Classic Four Col</a></li>
+                                        <li><a href="{{('portfolio-classic-five')}}" class="sub-menu-item"> Classic Five Col</a></li>
+                                        <li><a href="{{('portfolio-classic-six')}}" class="sub-menu-item"> Classic Six Col</a></li>
+                                    </ul> --}}
+                                {{-- </li> --}}
 
                                 <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Modern </a><span class="submenu-arrow"></span>
-                                    <ul class="submenu">
-                                        <li><a href="portfolio-modern-two.html" class="sub-menu-item"> Modern Two Col</a></li>
-                                        <li><a href="portfolio-modern-three.html" class="sub-menu-item"> Modern Three Col</a></li>
-                                        <li><a href="portfolio-modern-four.html" class="sub-menu-item"> Modern Four Col</a></li>
-                                        <li><a href="portfolio-modern-five.html" class="sub-menu-item"> Modern Five Col</a></li>
-                                        <li><a href="portfolio-modern-six.html" class="sub-menu-item"> Modern Six Col</a></li>
-                                    </ul>
+                                    {{-- <ul class="submenu">
+                                        <li><a href="{{('portfolio-modern-two')}}" class="sub-menu-item"> Modern Two Col</a></li>
+                                        <li><a href="{{('portfolio-modern-three')}}" class="sub-menu-item"> Modern Three Col</a></li>
+                                        <li><a href="{{('portfolio-modern-four')}}" class="sub-menu-item"> Modern Four Col</a></li>
+                                        <li><a href="{{('portfolio-modern-five')}}" class="sub-menu-item"> Modern Five Col</a></li>
+                                        <li><a href="{{('portfolio-modern-six')}}" class="sub-menu-item"> Modern Six Col</a></li>
+                                    </ul> --}}
                                 </li>                                
 
                                 <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Creative </a><span class="submenu-arrow"></span>
-                                    <ul class="submenu">
-                                        <li><a href="portfolio-creative-two.html" class="sub-menu-item"> Creative Two Col</a></li>
-                                        <li><a href="portfolio-creative-three.html" class="sub-menu-item"> Creative Three Col</a></li>
-                                        <li><a href="portfolio-creative-four.html" class="sub-menu-item"> Creative Four Col</a></li>
-                                        <li><a href="portfolio-creative-five.html" class="sub-menu-item"> Creative Five Col</a></li>
-                                        <li><a href="portfolio-creative-six.html" class="sub-menu-item"> Creative Six Col</a></li>
-                                    </ul>
+                                    {{-- <ul class="submenu">
+                                        <li><a href="{{('portfolio-creative-two')}}" class="sub-menu-item"> Creative Two Col</a></li>
+                                        <li><a href="{{('portfolio-creative-three')}}" class="sub-menu-item"> Creative Three Col</a></li>
+                                        <li><a href="{{('portfolio-creative-four')}}" class="sub-menu-item"> Creative Four Col</a></li>
+                                        <li><a href="{{('portfolio-creative-five')}}" class="sub-menu-item"> Creative Five Col</a></li>
+                                        <li><a href="{{('portfolio-creative-six')}}" class="sub-menu-item"> Creative Six Col</a></li>
+                                    </ul> --}}
                                 </li>
 
                                 <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Masonry </a><span class="submenu-arrow"></span>
-                                    <ul class="submenu">
+                                    {{-- <ul class="submenu">
                                         <li><a href="portfolio-masonry-two.html" class="sub-menu-item"> Masonry Two Col</a></li>
                                         <li><a href="portfolio-masonry-three.html" class="sub-menu-item"> Masonry Three Col</a></li>
                                         <li><a href="portfolio-masonry-four.html" class="sub-menu-item"> Masonry Four Col</a></li>
                                         <li><a href="portfolio-masonry-five.html" class="sub-menu-item"> Masonry Five Col</a></li>
                                         <li><a href="portfolio-masonry-six.html" class="sub-menu-item"> Masonry Six Col</a></li>
-                                    </ul>
+                                    </ul> --}}
                                 </li>
                                 <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Portfolio Detail</a><span class="submenu-arrow"></span>
-                                    <ul class="submenu">
+                                    {{-- <ul class="submenu">
                                         <li><a href="portfolio-detail-one.html" class="sub-menu-item">Detail One</a></li>
                                         <li><a href="portfolio-detail-two.html" class="sub-menu-item">Detail Two</a></li>
                                         <li><a href="portfolio-detail-three.html" class="sub-menu-item">Detail Three</a></li>
                                         <li><a href="portfolio-detail-four.html" class="sub-menu-item">Detail Four</a></li>
-                                    </ul>  
+                                    </ul>   --}}
                                 </li>
                             </ul>
                         </li>
@@ -131,12 +135,12 @@
                         <li class="has-submenu parent-menu-item">
                             <a href="javascript:void(0)">Blogs</a><span class="menu-arrow"></span>
                             <ul class="submenu">
-                                <li><a href="blogs.html" class="sub-menu-item">Blogs & Articles</a></li>
-                                <li><a href="blog-detail.html" class="sub-menu-item">Blog Detail</a></li>
+                                <li><a href="{{('blog')}}" class="sub-menu-item">Blogs & Articles</a></li>
+                                <li><a href="{{('blog-detail')}}" class="sub-menu-item">Blog Detail</a></li>
                             </ul>
                         </li>
 
-                        <li><a href="contact.html" class="sub-menu-item">Contact</a></li>
+                        <li><a href="{{('contact')}}" class="sub-menu-item">Contact</a></li>
                     </ul><!--end navigation menu-->
                 </div><!--end navigation-->
             </div><!--end container-->
@@ -144,16 +148,26 @@
         <!-- Navbar End -->
 
         <!-- Start Hero -->
-        <section class="bg-half-170 d-table w-100">
+        <section class="bg-half-170 d-table w-100" style="padding-top: 70px;">
             <div class="container">
                 <div class="row mt-5 align-items-center">
                     <div class="col-lg-7 col-md-6">
                         <div class="title-heading">
-                            <h6>Designer, Developer, Minimalist</h6>
-                            <h4 class="display-4 fw-bold my-4">A Full Service <br> Digital Agency</h4>
-                            <p class="text-muted para-desc">Porfo is a Creative Agency & Startup Studio that provides Digital Products and Services turns to focus on client success.</p>
-                            <div class="mt-4">
+                            <h6>{{ theme('home_headline') }}</h6>
+                            <h4 class="display-4 fw-bold my-4">{{ theme('home_subheadline') }}</h4>
+                            <p class="text-muted para-desc">{{ theme('home_description') }}</p>
+                            {{-- <div class="mt-4">
                                 <a href="javascript:void(0)" class="btn btn-pills btn-primary">Explore Works <span class="h5 mb-0 ms-1"><i class="uil uil-arrow-right align-middle"></i></span></a>
+                            </div> --}}
+                            <div class="mt-4">
+                                <a href="{{ theme('home_cta_url') }}" class="btn btn-pills btn-primary" style="float:left;">
+                                    {{ theme('home_cta') }}
+                                </a>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#" class="btn btn-pills btn-primary" style="margin-left:30px; line-height:20px;">
+                                    Learn More
+                                </a>
                             </div>
                         </div>
                     </div><!--end col-->
@@ -417,6 +431,9 @@
         <script>
             const tobii = new Tobii()
         </script>
+
+
+        {{-- @endsection --}}
     </body>
 
 </html>

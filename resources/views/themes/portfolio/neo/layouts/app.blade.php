@@ -17,8 +17,8 @@
     <link rel="icon" href="{{ setting('site.favicon', '/wave/favicon.png') }}" type="image/x-icon">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
 
-    
-    <link href="{{ asset('themes/' . $theme->folder . '/css/app.css') }}" rel="stylesheet">
+{{--     
+    <link href="{{ asset('themes/' . $theme->folder . '/neo/css/app.css') }}" rel="stylesheet"> --}}
    
 
     {{-- Social Share Open Graph Meta Tags --}}
@@ -48,7 +48,18 @@
     @endif
 
     <!-- Styles -->
-    <link href="{{ asset('themes/' . $theme->folder . '/css/app.css') }}" rel="stylesheet">
+    {{-- <link href="{{ asset('themes/' . $theme->folder . '/neo/css/app.css') }}" rel="stylesheet"> --}}
+    <link rel="shortcut icon" href="{{asset('themes/portfolio/neo/images/favicon.ico')}}">
+        <!-- Bootstrap -->
+        <link href="{{asset('themes/portfolio/neo/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
+        <!-- Tobii Lightbox -->
+        <link href="{{asset('themes/portfolio/neo/css/tobii.min.css')}}" rel="stylesheet" type="text/css" />
+        <!-- Icons -->
+        <link href="{{asset('themes/portfolio/neo/css/materialdesignicons.min.css')}}" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+        <!-- Main Css -->
+        <link href="{{asset('themes/portfolio/neo/css/style.css')}}" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="{{asset('themes/portfolio/neo/css/colors/default.css')}}" rel="stylesheet" id="color-opt">
 </head>
 <body class="flex flex-col min-h-screen @if(Request::is('/')){{ 'bg-white' }}@else{{ 'bg-gray-50' }}@endif @if(config('wave.dev_bar')){{ 'pb-10' }}@endif">
 
