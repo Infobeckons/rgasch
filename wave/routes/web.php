@@ -19,6 +19,7 @@ Route::get('blog/{category}/{post}', '\Wave\Http\Controllers\BlogController@post
 
 Route::view('install', 'wave::install')->name('wave.install');
 
+
 /***** Pages *****/
 Route::get('p/{page}', '\Wave\Http\Controllers\PageController@page');
 
@@ -71,3 +72,7 @@ Route::group(['middleware' => 'auth'], function(){
 Route::group(['middleware' => 'admin.user'], function(){
     Route::view('admin/do', 'wave::do');
 });
+
+
+//Custom Routes
+Route::view('index', 'theme::neo\index')->name('wave.index');

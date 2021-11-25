@@ -16,7 +16,7 @@
                 class="absolute top-0 w-screen max-w-xs px-2 mt-20 transform -translate-x-1/2 left-1/2 sm:px-0" x-cloak>
                 <div class="border border-gray-100 shadow-md rounded-xl">
                     <div class="overflow-hidden shadow-xs rounded-xl">
-                        <div class="relative z-20 grid gap-6 px-5 py-6 bg-white sm:p-8 sm:gap-8">
+                        {{-- <div class="relative z-20 grid gap-6 px-5 py-6 bg-white sm:p-8 sm:gap-8">
                             <a href="{{ url('docs') }}" class="block px-5 py-3 -m-3 space-y-1 transition duration-150 ease-in-out hover:border-blue-500 hover:border-l-2 rounded-xl hover:bg-gray-100">
                                 <p class="text-base font-medium leading-6 text-gray-900">
                                     Documentation
@@ -41,7 +41,7 @@
                                     View your application blog.
                                 </p>
                             </a>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
