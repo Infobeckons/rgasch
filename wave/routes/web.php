@@ -75,4 +75,11 @@ Route::group(['middleware' => 'admin.user'], function(){
 
 
 //Custom Routes
-Route::view('index', 'theme::neo\index')->name('wave.index');
+Route::view('index', 'theme::neo/index')->name('wave.index');
+Route::view('index-two', 'theme::neo/index-two')->name('wave.index-two');
+Route::view('index-three', 'theme::neo\index-three')->name('wave.index-three');
+Route::view('index-four', 'theme::neo\index-four')->name('wave.index-four');
+Route::view('index-five', 'theme::neo\index-five')->name('wave.index-five');
+Route::view('index-six', 'theme::neo\index-six')->name('wave.index-six');
+Route::view('index-seven', 'theme::neo\index-seven')->name('wave.index-seven');
+Route::view('index-eight', 'theme::neo\index-eight')->name('wave.index-eight');

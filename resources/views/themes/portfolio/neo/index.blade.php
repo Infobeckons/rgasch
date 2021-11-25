@@ -12,7 +12,7 @@
         <meta content="https://shreethemes.in/" name="website" />
         <meta content="3.1.0" name="version" />
         <!-- favicon -->
-        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="shortcut icon" href="{{asset('themes/portfolio/neo/images/favicon.ico')}}">
         <!-- Bootstrap -->
         <link href="{{asset('themes/portfolio/neo/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
         <!-- Tobii Lightbox -->
@@ -54,15 +54,15 @@
                         <li class="has-submenu parent-menu-item">
                             <a href="javascript:void(0)">Home</a><span class="menu-arrow"></span>
                             <ul class="submenu">
-                                <li><a href="index.html" class="sub-menu-item">Home One</a></li>
-                                <li><a href="index-two.html" class="sub-menu-item">Home Two</a></li>
-                                <li><a href="index-three.html" class="sub-menu-item">Home Three</a></li>
-                                <li><a href="index-four.html" class="sub-menu-item">Home Four</a></li>
-                                <li><a href="index-five.html" class="sub-menu-item">Home Five</a></li>
-                                <li><a href="index-six.html" class="sub-menu-item">Home Six</a></li>
-                                <li><a href="index-seven.html" class="sub-menu-item">Home Seven</a></li>
-                                <li><a href="index-eight.html" class="sub-menu-item">Home Eight</a></li>
-                                        <li><a href="index-boxed.html" class="sub-menu-item">Home Boxed</a></li>
+                                <li><a href="{{theme('wave.index')}}" class="sub-menu-item">Home One</a></li>
+                                <li><a href="{{theme('wave.index-two')}}" class="sub-menu-item">Home Two</a></li>
+                                <li><a href="{{theme('wave.index-three')}}" class="sub-menu-item">Home Three</a></li>
+                                <li><a href="{{theme('wave.index-four')}}" class="sub-menu-item">Home Four</a></li>
+                                <li><a href="{{theme('wave.index-five')}}" class="sub-menu-item">Home Five</a></li>
+                                <li><a href="{{theme('wave.index-six')}}" class="sub-menu-item">Home Six</a></li>
+                                <li><a href="{{theme('wave.index-seven')}}" class="sub-menu-item">Home Seven</a></li>
+                                <li><a href="{{theme('wave.index-eight')}}" class="sub-menu-item">Home Eight</a></li>
+                                <li><a href="{{theme('wave.index-boxed')}}" class="sub-menu-item">Home Boxed</a></li>
                             </ul>
                         </li>
 
@@ -159,7 +159,7 @@
                     </div><!--end col-->
 
                     <div class="col-lg-5 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                        <img src="images/hero/1.png" class="img-fluid" alt="">
+                        <img src="{{asset('themes/portfolio/neo/images/hero/1.png')}}" class="img-fluid" alt="">
                     </div><!--end col-->
                 </div><!--end row-->
             </div><!--end container-->
@@ -187,8 +187,8 @@
                     <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["branding"]'>
                         <div class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded shadow">
                             <div class="card-body p-0">
-                                <a href="{{asset('themes')}}images/work/1.jpg" class="lightbox" title="">
-                                    <img src="images/work/1.jpg" class="img-fluid" alt="work-image">
+                                <a href="{{asset('themes/portfolio/neo/images/work/1.jpg')}}" class="lightbox" title="">
+                                    <img src="{{asset('themes/portfolio/neo/images/work/1.jpg')}}" class="img-fluid" alt="work-image">
                                 </a>
                                 <div class="content bg-white p-3 rounded shadow">
                                     <h5><a href="javascript:void(0)" class="text-dark title">Iphone mockup</a></h5>
@@ -201,8 +201,8 @@
                     <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["designing"]'>
                         <div class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded shadow">
                             <div class="card-body p-0">
-                                <a href="images/work/2.jpg" class="lightbox" title="">
-                                    <img src="images/work/2.jpg" class="img-fluid" alt="work-image">
+                                <a href="{{asset('themes/portfolio/neo/images/work/2.jpg')}}" class="lightbox" title="">
+                                    <img src="{{asset('themes/portfolio/neo/images/work/2.jpg')}}" class="img-fluid" alt="work-image">
                                 </a>
                                 <div class="content bg-white p-3 rounded shadow">
                                     <h5><a href="javascript:void(0)" class="text-dark title">Iphone mockup</a></h5>
@@ -215,8 +215,8 @@
                     <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["photography"]'>
                         <div class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded shadow">
                             <div class="card-body p-0">
-                                <a href="images/work/3.jpg" class="lightbox" title="">
-                                    <img src="images/work/3.jpg" class="img-fluid" alt="work-image">
+                                <a href="{{asset('themes/portfolio/neo/images/work/3.jpg')}}" class="lightbox" title="">
+                                    <img src="{{asset('themes/portfolio/neo/images/work/3.jpg')}}" class="img-fluid" alt="work-image">
                                 </a>
                                 <div class="content bg-white p-3 rounded shadow">
                                     <h5><a href="javascript:void(0)" class="text-dark title">Iphone mockup</a></h5>
@@ -229,8 +229,8 @@
                     <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["development"]'>
                         <div class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded shadow">
                             <div class="card-body p-0">
-                                <a href="images/work/4.jpg" class="lightbox" title="">
-                                    <img src="images/work/4.jpg" class="img-fluid" alt="work-image">
+                                <a href="{{asset('themes/portfolio/neo/images/work/4.jpg')}}" class="lightbox" title="">
+                                    <img src="{{asset('themes/portfolio/neo/images/work/4.jpg')}}" class="img-fluid" alt="work-image">
                                 </a>
                                 <div class="content bg-white p-3 rounded shadow">
                                     <h5><a href="javascript:void(0)" class="text-dark title">Iphone mockup</a></h5>
@@ -243,8 +243,8 @@
                     <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["branding", "development"]'>
                         <div class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded shadow">
                             <div class="card-body p-0">
-                                <a href="images/work/5.jpg" class="lightbox" title="">
-                                    <img src="images/work/5.jpg" class="img-fluid" alt="work-image">
+                                <a href="{{asset('themes/portfolio/neo/images/work/5.jpg')}}" class="lightbox" title="">
+                                    <img src="{{asset('themes/portfolio/neo/images/work/5.jpg')}}" class="img-fluid" alt="work-image">
                                 </a>
                                 <div class="content bg-white p-3 rounded shadow">
                                     <h5><a href="javascript:void(0)" class="text-dark title">Iphone mockup</a></h5>
@@ -257,8 +257,8 @@
                     <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["photography"]'>
                         <div class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded shadow">
                             <div class="card-body p-0">
-                                <a href="images/work/6.jpg" class="lightbox" title="">
-                                    <img src="images/work/6.jpg" class="img-fluid" alt="work-image">
+                                <a href="{{asset('themes/portfolio/neo/images/work/6.jpg')}}" class="lightbox" title="">
+                                    <img src="{{asset('themes/portfolio/neo/images/work/6.jpg')}}" class="img-fluid" alt="work-image">
                                 </a>
                                 <div class="content bg-white p-3 rounded shadow">
                                     <h5><a href="javascript:void(0)" class="text-dark title">Iphone mockup</a></h5>
@@ -271,8 +271,8 @@
                     <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["designing"]'>
                         <div class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded shadow">
                             <div class="card-body p-0">
-                                <a href="images/work/7.jpg" class="lightbox" title="">
-                                    <img src="images/work/7.jpg" class="img-fluid" alt="work-image">
+                                <a href="{{asset('themes/portfolio/neo/images/work/7.jpg')}}" class="lightbox" title="">
+                                    <img src="{{asset('themes/portfolio/neo/images/work/7.jpg')}}" class="img-fluid" alt="work-image">
                                 </a>
                                 <div class="content bg-white p-3 rounded shadow">
                                     <h5><a href="javascript:void(0)" class="text-dark title">Iphone mockup</a></h5>
@@ -285,8 +285,8 @@
                     <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["designing"]'>
                         <div class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded shadow">
                             <div class="card-body p-0">
-                                <a href="images/work/8.jpg" class="lightbox" title="">
-                                    <img src="images/work/8.jpg" class="img-fluid" alt="work-image">
+                                <a href="{{asset('themes/portfolio/neo/images/work/8.jpg')}}" class="lightbox" title="">
+                                    <img src="{{asset('themes/portfolio/neo/images/work/8.jpg')}}" class="img-fluid" alt="work-image">
                                 </a>
                                 <div class="content bg-white p-3 rounded shadow">
                                     <h5><a href="javascript:void(0)" class="text-dark title">Iphone mockup</a></h5>
@@ -299,8 +299,8 @@
                     <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 picture-item" data-groups='["photography"]'>
                         <div class="card border-0 work-container work-grid position-relative d-block overflow-hidden rounded shadow">
                             <div class="card-body p-0">
-                                <a href="images/work/9.jpg" class="lightbox" title="">
-                                    <img src="images/work/9.jpg" class="img-fluid" alt="work-image">
+                                <a href="{{asset('themes/portfolio/neo/images/work/9.jpg')}}" class="lightbox" title="">
+                                    <img src="{{asset('themes/portfolio/neo/images/work/9.jpg')}}" class="img-fluid" alt="work-image">
                                 </a>
                                 <div class="content bg-white p-3 rounded shadow">
                                     <h5><a href="javascript:void(0)" class="text-dark title">Iphone mockup</a></h5>
