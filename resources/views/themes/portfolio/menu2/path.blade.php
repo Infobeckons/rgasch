@@ -50,35 +50,35 @@
                                     </ul> --}}
                                 {{-- </li> --}}
 
-                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Modern </a><span class="submenu-arrow"></span>
-                                    {{-- <ul class="submenu">
+                                {{-- <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Modern </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
                                         <li><a href="{{('portfolio-modern-two')}}" class="sub-menu-item"> Modern Two Col</a></li>
-                                    </ul> --}}
-                                </li>                                
+                                    </ul>
+                                </li>                                 --}}
 
-                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Creative </a><span class="submenu-arrow"></span>
-                                    {{-- <ul class="submenu">
+                                {{-- <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Creative </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
                                         <li><a href="{{('portfolio-creative-two')}}" class="sub-menu-item"> Creative Two Col</a></li>
-                                    </ul> --}}
-                                </li>
+                                    </ul>
+                                </li> --}}
 
-                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Masonry </a><span class="submenu-arrow"></span>
-                                    {{-- <ul class="submenu">
+                                {{-- <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Masonry </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
                                         <li><a href="portfolio-masonry-two.html" class="sub-menu-item"> Masonry Two Col</a></li>
-                                    </ul> --}}
-                                </li>
-                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Portfolio Detail</a><span class="submenu-arrow"></span>
-                                    {{-- <ul class="submenu">
+                                    </ul>
+                                </li> --}}
+                                {{-- <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Portfolio Detail</a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
                                         <li><a href="portfolio-detail-one.html" class="sub-menu-item">Detail One</a></li>
-                                    </ul>   --}}
-                                </li>
+                                    </ul>  
+                                </li> --}}
                             </ul>
                         </li>
 
                         <li class="has-submenu parent-menu-item">
                             <a href="javascript:void(0)">Blogs</a><span class="menu-arrow"></span>
                             <ul class="submenu">
-                                <li><a href="{{('blog')}}" class="sub-menu-item">Blogs & Articles</a></li>
+                                <li><a href="{{('blogs')}}" class="sub-menu-item">Blogs & Articles</a></li>
                                 <li><a href="{{('blog-detail')}}" class="sub-menu-item">Blog Detail</a></li>
                             </ul>
                         </li>

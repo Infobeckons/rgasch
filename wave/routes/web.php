@@ -80,7 +80,7 @@ Route::view('index-two', 'theme::neo/index-two')->name('wave.index-two');
 Route::view('aboutus', 'theme::neo\aboutus')->name('wave.aboutus');
 Route::view('services', 'theme::neo\services')->name('wave.services');
 Route::view('team', 'theme::neo\team')->name('wave.team');
-
 Route::view('contact', 'theme::neo\contact')->name('wave.contact');
-Route::view('index-seven', 'theme::neo\index-seven')->name('wave.index-seven');
+Route::view('blogs', 'theme::neo\blogs')->name('wave.blogs');
+Route::view('blog-detail', 'theme::neo\blog-detail')->name('wave.blog-detail');
 Route::view('index-eight', 'theme::neo\index-eight')->name('wave.index-eight');
