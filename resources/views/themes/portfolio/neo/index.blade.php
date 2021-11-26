@@ -29,6 +29,9 @@
     </head>
 
     <body>
+        {{-- <div class="whole-page-overlay" id="whole_page_loader">
+            <img class="center-loader"  style="height:100px;" src="{{asset('themes/portfolio/neo/images/logo.png')}}" style="background:white; align:center"/>
+        </div> --}}
      
         @extends('theme::menu2.path')
         <!-- Start Hero -->
