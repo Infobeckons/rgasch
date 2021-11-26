@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en">
 
     <head>
@@ -139,7 +139,40 @@
                 </div><!--end navigation-->
             </div><!--end container-->
         </header><!--end header-->
-        <!-- Navbar End -->
+        <!-- Navbar End --> --}}
+        @extends('theme::layouts.app')
+
+        @section('content')
+        <!DOCTYPE html>
+        <html lang="en">
+        
+            <head>
+                <meta charset="utf-8" />
+                <title>Porfo - Responsive Portfolio Template</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="description" content="Minimal Portfolio Template" />
+                <meta name="keywords" content="Portfolio, Minimal, Clean, Modern, Creative" />
+                <meta content="Shreethemes-studio" name="author" />
+                <meta content="support@shreethemes.in" name="mail" />
+                <meta content="https://shreethemes.in/" name="website" />
+                <meta content="3.1.0" name="version" />
+                <!-- favicon -->
+                <link rel="shortcut icon" href="{{asset('themes/portfolio/neo/images/favicon.ico')}}">
+                <!-- Bootstrap -->
+                <link href="{{asset('themes/portfolio/neo/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
+                <!-- Tobii Lightbox -->
+                <link href="{{asset('themes/portfolio/neo/css/tobii.min.css')}}" rel="stylesheet" type="text/css" />
+                <!-- Icons -->
+                <link href="{{asset('themes/portfolio/neo/css/materialdesignicons.min.css')}}" rel="stylesheet" type="text/css" />
+                <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+                <!-- Main Css -->
+                <link href="{{asset('themes/portfolio/neo/css/style.css')}}" rel="stylesheet" type="text/css" id="theme-opt" />
+                <link href="{{asset('themes/portfolio/neo/css/colors/default.css')}}" rel="stylesheet" id="color-opt">
+            </head>
+        
+            <body>
+             
+                @extends('theme::menu2.path')
 
         <!-- Start Hero -->
         <section class="bg-half-100 d-table w-100">
@@ -162,7 +195,7 @@
                     <div class="col-lg-3 col-md-4 col-12">
                         <div class="card team border-0 shadow rounded overflow-hidden">
                             <div class="card-body p-0">
-                                <img src="images/client/01.jpg" class="img-fluid" alt="">
+                                <img src="{{asset('themes/portfolio/neo/images/client/01.jpg')}}" class="img-fluid" alt="">
                                 <div class="p-4 content text-center">
                                     <h5>Patrick Mark</h5>
                                     <small class="text-muted">C.E.O</small>
@@ -174,7 +207,7 @@
                     <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                         <div class="card team border-0 shadow rounded overflow-hidden">
                             <div class="card-body p-0">
-                                <img src="images/client/02.jpg" class="img-fluid" alt="">
+                                <img src="{{asset('themes/portfolio/neo/images/client/02.jpg')}}" class="img-fluid" alt="">
                                 <div class="p-4 content text-center">
                                     <h5>Janelia Pet</h5>
                                     <small class="text-muted">M.D</small>
@@ -186,7 +219,7 @@
                     <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                         <div class="card team border-0 shadow rounded overflow-hidden">
                             <div class="card-body p-0">
-                                <img src="images/client/03.jpg" class="img-fluid" alt="">
+                                <img src="{{asset('themes/portfolio/neo/images/client/03.jpg')}}" class="img-fluid" alt="">
                                 <div class="p-4 content text-center">
                                     <h5>Cristina Clone</h5>
                                     <small class="text-muted">Finance</small>
@@ -198,7 +231,7 @@
                     <div class="col-lg-3 col-md-4 col-12 mt-4 mt-lg-0 pt-2 pt-lg-0">
                         <div class="card team border-0 shadow rounded overflow-hidden">
                             <div class="card-body p-0">
-                                <img src="images/client/04.jpg" class="img-fluid" alt="">
+                                <img src="{{asset('themes/portfolio/neo/images/client/04.jpg')}}" class="img-fluid" alt="">
                                 <div class="p-4 content text-center">
                                     <h5>Calvin Carlo</h5>
                                     <small class="text-muted">Marketing</small>
@@ -210,7 +243,7 @@
                     <div class="col-lg-3 col-md-4 col-12 mt-4 pt-2">
                         <div class="card team border-0 shadow rounded overflow-hidden">
                             <div class="card-body p-0">
-                                <img src="images/client/05.jpg" class="img-fluid" alt="">
+                                <img src="{{asset('themes/portfolio/neo/images/client/05.jpg')}}" class="img-fluid" alt="">
                                 <div class="p-4 content text-center">
                                     <h5>Miriam Mork</h5>
                                     <small class="text-muted">H.R</small>
@@ -222,7 +255,7 @@
                     <div class="col-lg-3 col-md-4 col-12 mt-4 pt-2">
                         <div class="card team border-0 shadow rounded overflow-hidden">
                             <div class="card-body p-0">
-                                <img src="images/client/06.jpg" class="img-fluid" alt="">
+                                <img src="{{asset('themes/portfolio/neo/images/client/06.jpg')}}" class="img-fluid" alt="">
                                 <div class="p-4 content text-center">
                                     <h5>Cristino Murphy</h5>
                                     <small class="text-muted">Designer</small>
@@ -234,7 +267,7 @@
                     <div class="col-lg-3 col-md-4 col-12 mt-4 pt-2">
                         <div class="card team border-0 shadow rounded overflow-hidden">
                             <div class="card-body p-0">
-                                <img src="images/client/07.jpg" class="img-fluid" alt="">
+                                <img src="{{asset('themes/portfolio/neo/images/client/07.jpg')}}" class="img-fluid" alt="">
                                 <div class="p-4 content text-center">
                                     <h5>Eagno Jerf</h5>
                                     <small class="text-muted">Developer</small>
@@ -246,7 +279,7 @@
                     <div class="col-lg-3 col-md-4 col-12 mt-4 pt-2">
                         <div class="card team border-0 shadow rounded overflow-hidden">
                             <div class="card-body p-0">
-                                <img src="images/client/08.jpg" class="img-fluid" alt="">
+                                <img src="{{asset('themes/portfolio/neo/images/client/08.jpg')}}" class="img-fluid" alt="">
                                 <div class="p-4 content text-center">
                                     <h5>Aarlo Dong</h5>
                                     <small class="text-muted">Fresher</small>
@@ -259,7 +292,7 @@
         </section><!--end section-->
         <!-- End -->
         
-
+{{-- 
         <!-- Footer Start -->
         <footer class="bg-light py-4">
             <div class="container text-center">
@@ -327,14 +360,25 @@
                 <a href="javascript:void(0);" class="settings bg-white shadow d-block"><i class="mdi mdi-cog ms-1 mdi-24px position-absolute mdi-spin text-primary"></i></a>
             </div>
         </div>
-        <!-- end Style switcher -->
+        <!-- end Style switcher --> --}}
         
-        <!-- Javascript -->
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <!-- Switcher -->
-        <script src="js/switcher.js"></script>
-        <!-- Main Js -->
-        <script src="js/app.js"></script>
-    </body>
-
-</html>
+       
+         <!-- Javascript -->
+         <script src="{{asset('themes/portfolio/neo/js/bootstrap.bundle.min.js')}}"></script>
+         <!-- Shuffle and Tobii -->
+         <script src="{{asset('themes/portfolio/neo/js/shuffle.min.js')}}"></script>
+         <script src="{{asset('themes/portfolio/neo/js/tobii.min.js')}}"></script>
+         <script src="{{asset('themes/portfolio/neo/js/gallery.init.js')}}"></script>
+         <!-- Switcher -->
+         <script src="{{asset('themes/portfolio/neo/js/switcher.js')}}"></script>
+         <!-- Main Js -->
+         <script src="{{asset('themes/portfolio/neo/js/app.js')}}"></script>
+ 
+         <script>
+             const tobii = new Tobii()
+         </script>
+ 
+     </body>
+ 
+ </html>
+      @endsection

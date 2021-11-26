@@ -1,3 +1,6 @@
+@extends('theme::layouts.app')
+
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,127 +29,8 @@
     </head>
 
     <body>
-        {{-- @extends('theme::layouts.app')
-
-@section('content') --}}
-
-        <!-- Navbar STart -->
-        <header id="topnav" class="defaultscroll sticky">
-            <div class="container">
-                <!-- Logo container-->
-                <a class="logo" href="{{('index')}}">
-                    <img src="{{asset('themes/portfolio/neo/images/logo.png')}}" class="me-1" height="28" alt="">
-                </a>
-                <!-- End Logo container-->
-                <div class="menu-extras">
-                    <div class="menu-item">
-                        <!-- Mobile menu toggle-->
-                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
-                            <div class="lines">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </a>
-                        <!-- End mobile menu toggle-->
-                    </div>
-                </div>
-        
-                <div id="navigation">
-                    <!-- Navigation Menu-->   
-                    <ul class="navigation-menu">
-                        <li class="has-submenu parent-menu-item">
-                            <a href="javascript:void(0)">Home</a><span class="menu-arrow"></span>
-                            <ul class="submenu">
-                                <li><a href="{{('index')}}" class="sub-menu-item">Home One</a></li>
-                                <li><a href="{{('index-two')}}" class="sub-menu-item">Home Two</a></li>
-                                {{-- <li><a href="{{('index-three')}}" class="sub-menu-item">Home Three</a></li>
-                                <li><a href="{{('index-four')}}" class="sub-menu-item">Home Four</a></li>
-                                <li><a href="{{('index-five')}}" class="sub-menu-item">Home Five</a></li>
-                                <li><a href="{{('index-six')}}" class="sub-menu-item">Home Six</a></li>
-                                <li><a href="{{('index-seven')}}" class="sub-menu-item">Home Seven</a></li>
-                                <li><a href="{{('index-eight')}}" class="sub-menu-item">Home Eight</a></li>
-                                <li><a href="{{('index-boxed')}}" class="sub-menu-item">Home Boxed</a></li> --}}
-                            </ul>
-                        </li>
-
-                        <li class="has-submenu parent-menu-item">
-                            <a href="javascript:void(0)">Company</a><span class="menu-arrow"></span>
-                            <ul class="submenu">
-                                <li><a href="{{('aboutus')}}" class="sub-menu-item">About us</a></li>
-                                <li><a href="{{('services')}}" class="sub-menu-item">Services</a></li>
-                                <li><a href="{{('team')}}" class="sub-menu-item">Team</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="has-submenu parent-parent-menu-item">
-                            {{-- <a href="javascript:void(0)">Portfolio</a><span class="menu-arrow"></span> --}}
-                            <ul class="submenu">
-                                {{-- <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Classic </a><span class="submenu-arrow"></span> --}}
-                                    {{-- <ul class="submenu">
-                                        <li><a href="{{('portfolio-classic-two')}}" class="sub-menu-item"> Classic Two Col</a></li>
-                                        <li><a href="{{('portfolio-classic-three')}}" class="sub-menu-item"> Classic Three Col</a></li>
-                                        <li><a href="{{('portfolio-classic-four')}}" class="sub-menu-item"> Classic Four Col</a></li>
-                                        <li><a href="{{('portfolio-classic-five')}}" class="sub-menu-item"> Classic Five Col</a></li>
-                                        <li><a href="{{('portfolio-classic-six')}}" class="sub-menu-item"> Classic Six Col</a></li>
-                                    </ul> --}}
-                                {{-- </li> --}}
-
-                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Modern </a><span class="submenu-arrow"></span>
-                                    {{-- <ul class="submenu">
-                                        <li><a href="{{('portfolio-modern-two')}}" class="sub-menu-item"> Modern Two Col</a></li>
-                                        <li><a href="{{('portfolio-modern-three')}}" class="sub-menu-item"> Modern Three Col</a></li>
-                                        <li><a href="{{('portfolio-modern-four')}}" class="sub-menu-item"> Modern Four Col</a></li>
-                                        <li><a href="{{('portfolio-modern-five')}}" class="sub-menu-item"> Modern Five Col</a></li>
-                                        <li><a href="{{('portfolio-modern-six')}}" class="sub-menu-item"> Modern Six Col</a></li>
-                                    </ul> --}}
-                                </li>                                
-
-                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Creative </a><span class="submenu-arrow"></span>
-                                    {{-- <ul class="submenu">
-                                        <li><a href="{{('portfolio-creative-two')}}" class="sub-menu-item"> Creative Two Col</a></li>
-                                        <li><a href="{{('portfolio-creative-three')}}" class="sub-menu-item"> Creative Three Col</a></li>
-                                        <li><a href="{{('portfolio-creative-four')}}" class="sub-menu-item"> Creative Four Col</a></li>
-                                        <li><a href="{{('portfolio-creative-five')}}" class="sub-menu-item"> Creative Five Col</a></li>
-                                        <li><a href="{{('portfolio-creative-six')}}" class="sub-menu-item"> Creative Six Col</a></li>
-                                    </ul> --}}
-                                </li>
-
-                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Masonry </a><span class="submenu-arrow"></span>
-                                    {{-- <ul class="submenu">
-                                        <li><a href="portfolio-masonry-two.html" class="sub-menu-item"> Masonry Two Col</a></li>
-                                        <li><a href="portfolio-masonry-three.html" class="sub-menu-item"> Masonry Three Col</a></li>
-                                        <li><a href="portfolio-masonry-four.html" class="sub-menu-item"> Masonry Four Col</a></li>
-                                        <li><a href="portfolio-masonry-five.html" class="sub-menu-item"> Masonry Five Col</a></li>
-                                        <li><a href="portfolio-masonry-six.html" class="sub-menu-item"> Masonry Six Col</a></li>
-                                    </ul> --}}
-                                </li>
-                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Portfolio Detail</a><span class="submenu-arrow"></span>
-                                    {{-- <ul class="submenu">
-                                        <li><a href="portfolio-detail-one.html" class="sub-menu-item">Detail One</a></li>
-                                        <li><a href="portfolio-detail-two.html" class="sub-menu-item">Detail Two</a></li>
-                                        <li><a href="portfolio-detail-three.html" class="sub-menu-item">Detail Three</a></li>
-                                        <li><a href="portfolio-detail-four.html" class="sub-menu-item">Detail Four</a></li>
-                                    </ul>   --}}
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="has-submenu parent-menu-item">
-                            <a href="javascript:void(0)">Blogs</a><span class="menu-arrow"></span>
-                            <ul class="submenu">
-                                <li><a href="{{('blog')}}" class="sub-menu-item">Blogs & Articles</a></li>
-                                <li><a href="{{('blog-detail')}}" class="sub-menu-item">Blog Detail</a></li>
-                            </ul>
-                        </li>
-
-                        <li><a href="{{('contact')}}" class="sub-menu-item">Contact</a></li>
-                    </ul><!--end navigation menu-->
-                </div><!--end navigation-->
-            </div><!--end container-->
-        </header><!--end header-->
-        <!-- Navbar End -->
-
+     
+        @extends('theme::menu2.path')
         <!-- Start Hero -->
         <section class="bg-half-170 d-table w-100" style="padding-top: 70px;">
             <div class="container">
@@ -349,7 +233,7 @@
         <!-- End -->
 
         <!-- Footer Start -->
-        <footer class="bg-light py-4">
+        {{-- <footer class="bg-light py-4">
             <div class="container text-center">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-sm-8">
@@ -369,7 +253,9 @@
                     </div>
                 </div><!--end row-->
             </div><!--end container-->
-        </footer><!--end footer-->
+            //<a href="javascript:void(0)" class="js-lcc-settings-toggle">@lang('cookie-consent::texts.alert_settings')</a> 
+        </footer> --}}
+        <!--end footer-->
         <!-- Footer End -->
 
         <!-- Back to top -->
@@ -377,7 +263,7 @@
         <!-- Back to top -->
 
         <!-- Style switcher -->
-        <div id="style-switcher" class="bg-light border p-3" onclick="toggleSwitcher()">
+        {{-- <div id="style-switcher" class="bg-light border p-3" onclick="toggleSwitcher()">
             <div>
                 <h6 class="title text-center">Select Your Color</h6>
                 <ul class="pattern">
@@ -413,8 +299,9 @@
             </div>
             <div class="bottom">
                 <a href="javascript:void(0);" class="settings bg-white shadow d-block"><i class="mdi mdi-cog ms-1 mdi-24px position-absolute mdi-spin text-primary"></i></a>
+               
             </div>
-        </div>
+        </div> --}}
         <!-- end Style switcher -->
         
         <!-- Javascript -->
@@ -432,8 +319,7 @@
             const tobii = new Tobii()
         </script>
 
-
-        {{-- @endsection --}}
     </body>
 
 </html>
+     @endsection

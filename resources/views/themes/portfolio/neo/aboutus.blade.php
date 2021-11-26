@@ -1,147 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
+        @extends('theme::layouts.app')
 
-    <head>
-        <meta charset="utf-8" />
-        <title>Porfo - Responsive Portfolio Template</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Minimal Portfolio Template" />
-        <meta name="keywords" content="Portfolio, Minimal, Clean, Modern, Creative" />
-        <meta content="Shreethemes-studio" name="author" />
-        <meta content="support@shreethemes.in" name="mail" />
-        <meta content="https://shreethemes.in/" name="website" />
-        <meta content="3.1.0" name="version" />
-        <!-- favicon -->
-        <link rel="shortcut icon" href="images/favicon.ico">
-        <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <!-- Slider -->               
-        <link rel="stylesheet" href="css/tiny-slider.css"/>
-        <!-- Icons -->
-        <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
-        <!-- Main Css -->
-        <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
-        <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
-    </head>
-
-    <body>
-        <!-- Navbar STart -->
-        <header id="topnav" class="defaultscroll sticky">
-            <div class="container">
-                <!-- Logo container-->
-                <a class="logo" href="index.html">
-                    <img src="images/logo.png" class="me-1" height="28" alt="">
-                </a>
-                <!-- End Logo container-->
-                <div class="menu-extras">
-                    <div class="menu-item">
-                        <!-- Mobile menu toggle-->
-                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
-                            <div class="lines">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </a>
-                        <!-- End mobile menu toggle-->
-                    </div>
-                </div>
+        @section('content')
+        <!DOCTYPE html>
+        <html lang="en">
         
-                <div id="navigation">
-                    <!-- Navigation Menu-->   
-                    <ul class="navigation-menu">
-                        <li class="has-submenu parent-menu-item">
-                            <a href="javascript:void(0)">Home</a><span class="menu-arrow"></span>
-                            <ul class="submenu">
-                                <li><a href="index.html" class="sub-menu-item">Home One</a></li>
-                                <li><a href="index-two.html" class="sub-menu-item">Home Two</a></li>
-                                <li><a href="index-three.html" class="sub-menu-item">Home Three</a></li>
-                                <li><a href="index-four.html" class="sub-menu-item">Home Four</a></li>
-                                <li><a href="index-five.html" class="sub-menu-item">Home Five</a></li>
-                                <li><a href="index-six.html" class="sub-menu-item">Home Six</a></li>
-                                <li><a href="index-seven.html" class="sub-menu-item">Home Seven</a></li>
-                                <li><a href="index-eight.html" class="sub-menu-item">Home Eight</a></li>
-                                        <li><a href="index-boxed.html" class="sub-menu-item">Home Boxed</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="has-submenu parent-menu-item">
-                            <a href="javascript:void(0)">Company</a><span class="menu-arrow"></span>
-                            <ul class="submenu">
-                                <li><a href="aboutus.html" class="sub-menu-item">About us</a></li>
-                                <li><a href="services.html" class="sub-menu-item">Services</a></li>
-                                <li><a href="team.html" class="sub-menu-item">Team</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="has-submenu parent-parent-menu-item">
-                            <a href="javascript:void(0)">Portfolio</a><span class="menu-arrow"></span>
-                            <ul class="submenu">
-                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Classic </a><span class="submenu-arrow"></span>
-                                    <ul class="submenu">
-                                        <li><a href="portfolio-classic-two.html" class="sub-menu-item"> Classic Two Col</a></li>
-                                        <li><a href="portfolio-classic-three.html" class="sub-menu-item"> Classic Three Col</a></li>
-                                        <li><a href="portfolio-classic-four.html" class="sub-menu-item"> Classic Four Col</a></li>
-                                        <li><a href="portfolio-classic-five.html" class="sub-menu-item"> Classic Five Col</a></li>
-                                        <li><a href="portfolio-classic-six.html" class="sub-menu-item"> Classic Six Col</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Modern </a><span class="submenu-arrow"></span>
-                                    <ul class="submenu">
-                                        <li><a href="portfolio-modern-two.html" class="sub-menu-item"> Modern Two Col</a></li>
-                                        <li><a href="portfolio-modern-three.html" class="sub-menu-item"> Modern Three Col</a></li>
-                                        <li><a href="portfolio-modern-four.html" class="sub-menu-item"> Modern Four Col</a></li>
-                                        <li><a href="portfolio-modern-five.html" class="sub-menu-item"> Modern Five Col</a></li>
-                                        <li><a href="portfolio-modern-six.html" class="sub-menu-item"> Modern Six Col</a></li>
-                                    </ul>
-                                </li>                                
-
-                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Creative </a><span class="submenu-arrow"></span>
-                                    <ul class="submenu">
-                                        <li><a href="portfolio-creative-two.html" class="sub-menu-item"> Creative Two Col</a></li>
-                                        <li><a href="portfolio-creative-three.html" class="sub-menu-item"> Creative Three Col</a></li>
-                                        <li><a href="portfolio-creative-four.html" class="sub-menu-item"> Creative Four Col</a></li>
-                                        <li><a href="portfolio-creative-five.html" class="sub-menu-item"> Creative Five Col</a></li>
-                                        <li><a href="portfolio-creative-six.html" class="sub-menu-item"> Creative Six Col</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Masonry </a><span class="submenu-arrow"></span>
-                                    <ul class="submenu">
-                                        <li><a href="portfolio-masonry-two.html" class="sub-menu-item"> Masonry Two Col</a></li>
-                                        <li><a href="portfolio-masonry-three.html" class="sub-menu-item"> Masonry Three Col</a></li>
-                                        <li><a href="portfolio-masonry-four.html" class="sub-menu-item"> Masonry Four Col</a></li>
-                                        <li><a href="portfolio-masonry-five.html" class="sub-menu-item"> Masonry Five Col</a></li>
-                                        <li><a href="portfolio-masonry-six.html" class="sub-menu-item"> Masonry Six Col</a></li>
-                                    </ul>
-                                </li>
-                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Portfolio Detail</a><span class="submenu-arrow"></span>
-                                    <ul class="submenu">
-                                        <li><a href="portfolio-detail-one.html" class="sub-menu-item">Detail One</a></li>
-                                        <li><a href="portfolio-detail-two.html" class="sub-menu-item">Detail Two</a></li>
-                                        <li><a href="portfolio-detail-three.html" class="sub-menu-item">Detail Three</a></li>
-                                        <li><a href="portfolio-detail-four.html" class="sub-menu-item">Detail Four</a></li>
-                                    </ul>  
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="has-submenu parent-menu-item">
-                            <a href="javascript:void(0)">Blogs</a><span class="menu-arrow"></span>
-                            <ul class="submenu">
-                                <li><a href="blogs.html" class="sub-menu-item">Blogs & Articles</a></li>
-                                <li><a href="blog-detail.html" class="sub-menu-item">Blog Detail</a></li>
-                            </ul>
-                        </li>
-
-                        <li><a href="contact.html" class="sub-menu-item">Contact</a></li>
-                    </ul><!--end navigation menu-->
-                </div><!--end navigation-->
-            </div><!--end container-->
-        </header><!--end header-->
-        <!-- Navbar End -->
+            <head>
+                <meta charset="utf-8" />
+                <title>Porfo - Responsive Portfolio Template</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="description" content="Minimal Portfolio Template" />
+                <meta name="keywords" content="Portfolio, Minimal, Clean, Modern, Creative" />
+                <meta content="Shreethemes-studio" name="author" />
+                <meta content="support@shreethemes.in" name="mail" />
+                <meta content="https://shreethemes.in/" name="website" />
+                <meta content="3.1.0" name="version" />
+                <!-- favicon -->
+                <link rel="shortcut icon" href="{{asset('themes/portfolio/neo/images/favicon.ico')}}">
+                <!-- Bootstrap -->
+                <link href="{{asset('themes/portfolio/neo/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
+                <!-- Tobii Lightbox -->
+                <link href="{{asset('themes/portfolio/neo/css/tobii.min.css')}}" rel="stylesheet" type="text/css" />
+                <!-- Icons -->
+                <link href="{{asset('themes/portfolio/neo/css/materialdesignicons.min.css')}}" rel="stylesheet" type="text/css" />
+                <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+                <!-- Main Css -->
+                <link href="{{asset('themes/portfolio/neo/css/style.css')}}" rel="stylesheet" type="text/css" id="theme-opt" />
+                <link href="{{asset('themes/portfolio/neo/css/colors/default.css')}}" rel="stylesheet" id="color-opt">
+            </head>
+        
+            <body>
+             
+                @extends('theme::menu2.path')
 
         <!-- Start Hero -->
         <section class="bg-half-100 d-table w-100">
@@ -171,7 +60,7 @@
                     </div><!--end col-->
 
                     <div class="col-12 mt-5">
-                        <img src="images/laptop.png" class="img-fluid d-block mx-auto" alt="">
+                        <img src="{{asset('themes/portfolio/neo/images/laptop.png')}}" class="img-fluid d-block mx-auto" alt="">
                     </div>
                 </div><!--end row-->
             </div><!--end container-->
@@ -324,7 +213,7 @@
                         <div class="tiny-three-item">
                             <div class="tiny-slide">
                                 <div class="d-flex customer-testi m-2">
-                                    <img src="images/client/01.jpg" class="avatar avatar-small me-3 rounded shadow" alt="">
+                                    <img src="{{asset('themes/portfolio/neo/images/client/01.jpg')}}" class="avatar avatar-small me-3 rounded shadow" alt="">
                                     <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
                                         <ul class="list-unstyled mb-0">
                                             <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
@@ -341,7 +230,7 @@
                             
                             <div class="tiny-slide">
                                 <div class="d-flex customer-testi m-2">
-                                    <img src="images/client/02.jpg" class="avatar avatar-small me-3 rounded shadow" alt="">
+                                    <img src="{{asset('themes/portfolio/neo/images/client/02.jpg')}}" class="avatar avatar-small me-3 rounded shadow" alt="">
                                     <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
                                         <ul class="list-unstyled mb-0">
                                             <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
@@ -358,7 +247,7 @@
 
                             <div class="tiny-slide">
                                 <div class="d-flex customer-testi m-2">
-                                    <img src="images/client/03.jpg" class="avatar avatar-small me-3 rounded shadow" alt="">
+                                    <img src="{{asset('themes/portfolio/neo/images/client/03.jpg')}}" class="avatar avatar-small me-3 rounded shadow" alt="">
                                     <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
                                         <ul class="list-unstyled mb-0">
                                             <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
@@ -375,7 +264,7 @@
 
                             <div class="tiny-slide">
                                 <div class="d-flex customer-testi m-2">
-                                    <img src="images/client/04.jpg" class="avatar avatar-small me-3 rounded shadow" alt="">
+                                    <img src="{{asset('themes/portfolio/neo/images/client/04.jpg')}}" class="avatar avatar-small me-3 rounded shadow" alt="">
                                     <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
                                         <ul class="list-unstyled mb-0">
                                             <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
@@ -392,7 +281,7 @@
 
                             <div class="tiny-slide">
                                 <div class="d-flex customer-testi m-2">
-                                    <img src="images/client/05.jpg" class="avatar avatar-small me-3 rounded shadow" alt="">
+                                    <img src="{{asset('themes/portfolio/neo/images/client/05.jpg')}}" class="avatar avatar-small me-3 rounded shadow" alt="">
                                     <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
                                         <ul class="list-unstyled mb-0">
                                             <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
@@ -409,7 +298,7 @@
 
                             <div class="tiny-slide">
                                 <div class="d-flex customer-testi m-2">
-                                    <img src="images/client/06.jpg" class="avatar avatar-small me-3 rounded shadow" alt="">
+                                    <img src="{{asset('themes/portfolio/neo/images/client/06.jpg')}}" class="avatar avatar-small me-3 rounded shadow" alt="">
                                     <div class="flex-1 content p-3 shadow rounded bg-white position-relative">
                                         <ul class="list-unstyled mb-0">
                                             <li class="list-inline-item"><i class="mdi mdi-star text-warning"></i></li>
@@ -446,7 +335,7 @@
                                     <li><a href="javascript:void(0)" class="text-primary small">Branding</a></li>
                                     <li class="text-muted small">20th February 2021</li>
                                 </ul>
-                                <img src="images/blog/1.jpg" class="img-fluid rounded" alt="">
+                                <img src="{{asset('themes/portfolio/neo/images/blog/1.jpg')}}" class="img-fluid rounded" alt="">
                                 <div class="mt-4">
                                     <h5><a href="javascript:void(0)" class="title text-dark mb-0">What is special about it?</a></h5>
                                     <p class="text-muted mb-2">Dummy text is also known as 'fill text'. It is said that song composers</p>
@@ -463,7 +352,7 @@
                                     <li><a href="javascript:void(0)" class="text-primary small">Designing</a></li>
                                     <li class="text-muted small">20th February 2021</li>
                                 </ul>
-                                <img src="images/blog/2.jpg" class="img-fluid rounded" alt="">
+                                <img src="{{asset('themes/portfolio/neo/images/blog/2.jpg')}}" class="img-fluid rounded" alt="">
                                 <div class="mt-4">
                                     <h5><a href="javascript:void(0)" class="title text-dark mb-0">The place easily mistaken</a></h5>
                                     <p class="text-muted mb-2">Dummy text is also known as 'fill text'. It is said that song composers</p>
@@ -480,7 +369,7 @@
                                     <li><a href="javascript:void(0)" class="text-primary small">Photography</a></li>
                                     <li class="text-muted small">20th February 2021</li>
                                 </ul>
-                                <img src="images/blog/3.jpg" class="img-fluid rounded" alt="">
+                                <img src="{{asset('themes/portfolio/neo/images/blog/3.jpg')}}" class="img-fluid rounded" alt="">
                                 <div class="mt-4">
                                     <h5><a href="javascript:void(0)" class="title text-dark mb-0">Information you need to know</a></h5>
                                     <p class="text-muted mb-2">Dummy text is also known as 'fill text'. It is said that song composers</p>
@@ -494,7 +383,7 @@
         </section><!--end section-->
         <!-- End -->
         
-
+{{-- 
         <!-- Footer Start -->
         <footer class="bg-light py-4">
             <div class="container text-center">
@@ -562,17 +451,24 @@
                 <a href="javascript:void(0);" class="settings bg-white shadow d-block"><i class="mdi mdi-cog ms-1 mdi-24px position-absolute mdi-spin text-primary"></i></a>
             </div>
         </div>
-        <!-- end Style switcher -->
+        <!-- end Style switcher --> --}}
         
         <!-- Javascript -->
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <!-- SLIDER -->
-        <script src="js/tiny-slider.js "></script>
-        <script src="js/tiny-slider-init.js "></script>
+        <script src="{{asset('themes/portfolio/neo/js/bootstrap.bundle.min.js')}}"></script>
+        <!-- Shuffle and Tobii -->
+        <script src="{{asset('themes/portfolio/neo/js/shuffle.min.js')}}"></script>
+        <script src="{{asset('themes/portfolio/neo/js/tobii.min.js')}}"></script>
+        <script src="{{asset('themes/portfolio/neo/js/gallery.init.js')}}"></script>
         <!-- Switcher -->
-        <script src="js/switcher.js"></script>
+        <script src="{{asset('themes/portfolio/neo/js/switcher.js')}}"></script>
         <!-- Main Js -->
-        <script src="js/app.js"></script>
+        <script src="{{asset('themes/portfolio/neo/js/app.js')}}"></script>
+
+        <script>
+            const tobii = new Tobii()
+        </script>
+
     </body>
 
 </html>
+     @endsection
