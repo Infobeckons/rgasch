@@ -26,6 +26,16 @@
         <!-- Main Css -->
         <link href="{{asset('themes/portfolio/neo/css/style.css')}}" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="{{asset('themes/portfolio/neo/css/colors/default.css')}}" rel="stylesheet" id="color-opt">
+        {{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> --}}
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
+
+
+	{{-- <style type="text/css">
+		img{width:100%;height:250px;border:1px solid #e1e1e1;}
+		.col-md-4{padding-bottom: 70px;}
+		h2{padding-bottom: 20px;}
+	</style> --}}
     </head>
 
     <body>
@@ -235,77 +245,13 @@
         </section><!--end section-->
         <!-- End -->
 
-        <!-- Footer Start -->
-        {{-- <footer class="bg-light py-4">
-            <div class="container text-center">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-sm-8">
-                        <div class="text-sm-start">
-                            <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> Porfo. Design with <i class="mdi mdi-heart text-danger"></i> by <a href="https://shreethemes.in/" target="_blank" class="text-reset">Shreethemes-studio</a>.</p>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-sm-4 mt-4 mt-sm-0">
-                        <ul class="list-unstyled social-icon text-sm-end social mb-0">
-                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="uil uil-dribbble" title="dribbble"></i></a></li>
-                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="uil uil-facebook-f" title="facebook"></i></a></li>
-                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="uil uil-instagram" title="instagram"></i></a></li>
-                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="uil uil-twitter" title="twitter"></i></a></li>
-                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="uil uil-envelope" title="email"></i></a></li>
-                        </ul>
-                    </div>
-                </div><!--end row-->
-            </div><!--end container-->
-            //<a href="javascript:void(0)" class="js-lcc-settings-toggle">@lang('cookie-consent::texts.alert_settings')</a> 
-        </footer> --}}
-        <!--end footer-->
-        <!-- Footer End -->
+  
 
         <!-- Back to top -->
         <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-primary back-to-top"><i class="mdi mdi-arrow-up icons"></i></a>
         <!-- Back to top -->
 
-        <!-- Style switcher -->
-        {{-- <div id="style-switcher" class="bg-light border p-3" onclick="toggleSwitcher()">
-            <div>
-                <h6 class="title text-center">Select Your Color</h6>
-                <ul class="pattern">
-                    <li class="list-inline-item">
-                        <a class="color1" href="javascript:void(0);" onclick="setColor('default')"></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="color2" href="javascript:void(0);" onclick="setColor('blue')"></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="color3" href="javascript:void(0);" onclick="setColor('purple')"></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="color4" href="javascript:void(0);" onclick="setColor('red')"></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="color5" href="javascript:void(0);" onclick="setColor('green')"></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="color6" href="javascript:void(0);" onclick="setColor('cyan')"></a>
-                    </li>
-                </ul>
-
-                <h6 class="title text-center pt-3 mb-0 border-top">Theme Option</h6>
-                <ul class="text-center list-unstyled mb-0">
-                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary rtl-version t-rtl-light mt-2" onclick="setTheme('style-rtl')">RTL</a></li>
-                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary ltr-version t-ltr-light mt-2" onclick="setTheme('style')">LTR</a></li>
-                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary dark-rtl-version t-rtl-dark mt-2" onclick="setTheme('style-dark-rtl')">RTL</a></li>
-                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-primary dark-ltr-version t-ltr-dark mt-2" onclick="setTheme('style-dark')">LTR</a></li>
-                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-dark dark-version t-dark mt-2" onclick="setTheme('style-dark')">Dark</a></li>
-                    <li class="d-grid"><a href="javascript:void(0)" class="btn btn-sm btn-block btn-dark light-version t-light mt-2" onclick="setTheme('style')">Light</a></li>
-                </ul>
-            </div>
-            <div class="bottom">
-                <a href="javascript:void(0);" class="settings bg-white shadow d-block"><i class="mdi mdi-cog ms-1 mdi-24px position-absolute mdi-spin text-primary"></i></a>
-               
-            </div>
-        </div> --}}
-        <!-- end Style switcher -->
+       
         
         <!-- Javascript -->
         <script src="{{asset('themes/portfolio/neo/js/bootstrap.bundle.min.js')}}"></script>
@@ -321,6 +267,12 @@
         <script>
             const tobii = new Tobii()
         </script>
+
+<script type="text/javascript">
+	$("img").lazyload({
+	    effect : "fadeIn"
+	});
+</script>
 
     </body>
 

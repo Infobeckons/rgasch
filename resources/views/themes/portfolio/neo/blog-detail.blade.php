@@ -44,7 +44,7 @@
                                 <li class="list-inline-item small font-weight-normal tag text-muted me-2"><i class="uil uil-bookmark text-dark"></i> Branding</li>
                                 <li class="list-inline-item small font-weight-normal date text-muted"><i class="uil uil-calendar-alt text-dark"></i> 13th August, 2019</li>
                             </ul>
-                            <img src="images/blog/s1.jpg" class="img-fluid rounded shadow mt-4" alt="">
+                            <img src="{{asset('themes/portfolio/neo/images/blog/s1.jpg')}}" class="img-fluid rounded shadow mt-4" alt="">
                             <p class="text-muted mt-4">I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</p>
                             <p class="text-muted">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.</p>
                             <p class="text-muted mb-0">If the distribution of letters and 'words' is random, the reader will not be distracted from making a neutral judgement on the visual impact and readability of the typefaces (typography), or the distribution of text on the page (layout or type area). For this reason, dummy text usually consists of a more or less random series of words or syllables. This prevents repetitive patterns from impairing the overall visual impression and facilitates the comparison of different typefaces.</p>
@@ -59,7 +59,7 @@
                                             <div class="d-flex justify-content-between">
                                                 <div class="d-flex align-items-center">
                                                     <a class="pe-3" href="#">
-                                                        <img src="images/client/01.jpg" class="img-fluid avatar avatar-md-sm rounded-circle shadow" alt="img">
+                                                        <img src="{{asset('themes/portfolio/neo/images/client/01.jpg')}}" class="img-fluid avatar avatar-md-sm rounded-circle shadow" alt="img">
                                                     </a>
                                                     <div class="commentor-detail">
                                                         <h6 class="mb-0"><a href="javascript:void(0)" class="media-heading font-weight-normal text-dark">Lorenzo Peterson</a></h6>
@@ -77,7 +77,7 @@
                                             <div class="d-flex justify-content-between">
                                                 <div class="d-flex align-items-center">
                                                     <a class="pe-3" href="#">
-                                                        <img src="images/client/02.jpg" class="img-fluid avatar avatar-md-sm rounded-circle shadow" alt="img">
+                                                        <img src="{{asset('themes/portfolio/neo/images/client/02.jpg')}}" class="img-fluid avatar avatar-md-sm rounded-circle shadow" alt="img">
                                                     </a>
                                                     <div class="commentor-detail">
                                                         <h6 class="mb-0"><a href="javascript:void(0)" class="media-heading font-weight-normal text-dark">Tammy Camacho</a></h6>
@@ -95,7 +95,7 @@
                                             <div class="d-flex justify-content-between">
                                                 <div class="d-flex align-items-center">
                                                     <a class="pe-3" href="#">
-                                                        <img src="images/client/03.jpg" class="img-fluid avatar avatar-md-sm rounded-circle shadow" alt="img">
+                                                        <img src="{{asset('themes/portfolio/neo/images/client/03.jpg')}}" class="img-fluid avatar avatar-md-sm rounded-circle shadow" alt="img">
                                                     </a>
                                                     <div class="commentor-detail">
                                                         <h6 class="mb-0"><a href="javascript:void(0)" class="media-heading font-weight-normal text-dark">Tammy Camacho</a></h6>
@@ -113,7 +113,7 @@
                                                     <div class="d-flex justify-content-between">
                                                         <div class="d-flex align-items-center">
                                                             <a class="pe-3" href="#">
-                                                                <img src="images/client/01.jpg" class="img-fluid avatar avatar-md-sm rounded-circle shadow" alt="img">
+                                                                <img src="{{asset('themes/portfolio/neo/images/client/01.jpg')}}" class="img-fluid avatar avatar-md-sm rounded-circle shadow" alt="img">
                                                             </a>
                                                             <div class="commentor-detail">
                                                                 <h6 class="mb-0"><a href="javascript:void(0)" class="media-heading font-weight-normal text-dark">Lorenzo Peterson</a></h6>
@@ -181,7 +181,7 @@
                                                         <li><a href="javascript:void(0)" class="text-primary small">Branding</a></li>
                                                         <li class="text-muted small">20th February 2021</li>
                                                     </ul>
-                                                    <img src="images/blog/1.jpg" class="img-fluid rounded" alt="">
+                                                    <img src="{{asset('themes/portfolio/neo/images/blog/1.jpg')}}" class="img-fluid rounded" alt="">
                                                     <div class="mt-4">
                                                         <h5><a href="javascript:void(0)" class="title text-dark mb-0">What is special about it?</a></h5>
                                                         <p class="text-muted mb-2">Dummy text is also known as 'fill text'. It is said that song composers</p>
@@ -198,7 +198,7 @@
                                                         <li><a href="javascript:void(0)" class="text-primary small">Designing</a></li>
                                                         <li class="text-muted small">20th February 2021</li>
                                                     </ul>
-                                                    <img src="images/blog/2.jpg" class="img-fluid rounded" alt="">
+                                                    <img src="{{asset('themes/portfolio/neo/images/blog/2.jpg')}}" class="img-fluid rounded" alt="">
                                                     <div class="mt-4">
                                                         <h5><a href="javascript:void(0)" class="title text-dark mb-0">The place easily mistaken</a></h5>
                                                         <p class="text-muted mb-2">Dummy text is also known as 'fill text'. It is said that song composers</p>
@@ -215,7 +215,7 @@
                                                         <li><a href="javascript:void(0)" class="text-primary small">Photography</a></li>
                                                         <li class="text-muted small">20th February 2021</li>
                                                     </ul>
-                                                    <img src="images/blog/3.jpg" class="img-fluid rounded" alt="">
+                                                    <img src="{{asset('themes/portfolio/neo/images/blog/3.jpg')}}" class="img-fluid rounded" alt="">
                                                     <div class="mt-4">
                                                         <h5><a href="javascript:void(0)" class="title text-dark mb-0">Information you need to know</a></h5>
                                                         <p class="text-muted mb-2">Dummy text is also known as 'fill text'. It is said that song composers</p>

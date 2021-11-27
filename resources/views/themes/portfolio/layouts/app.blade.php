@@ -50,8 +50,10 @@
     <!-- Styles -->
     <link href="{{ asset('themes/' . $theme->folder . '/css/app.css') }}" rel="stylesheet">
 </head>
-<body class="flex flex-col min-h-screen @if(Request::is('/')){{ 'bg-white' }}@else{{ 'bg-gray-50' }}@endif @if(config('wave.dev_bar')){{ 'pb-10' }}@endif">
+{{-- <iframe src="{{route('wave.load')}}" loading="lazy" style="height: 100%; margin-bottom:100px;"></iframe> --}}
 
+<body class="flex flex-col min-h-screen @if(Request::is('/')){{ 'bg-white' }}@else{{ 'bg-gray-50' }}@endif @if(config('wave.dev_bar')){{ 'pb-10' }}@endif " loading="lazy">
+    
     @if(config('wave.demo') && Request::is('/'))
         @include('theme::partials.demo-header')
     @endif

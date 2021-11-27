@@ -83,4 +83,5 @@ Route::view('team', 'theme::neo\team')->name('wave.team');
 Route::view('contact', 'theme::neo\contact')->name('wave.contact');
 Route::view('blogs', 'theme::neo\blogs')->name('wave.blogs');
 Route::view('blog-detail', 'theme::neo\blog-detail')->name('wave.blog-detail');
-Route::view('index-eight', 'theme::neo\index-eight')->name('wave.index-eight');
+
+Route::post('insert', '\Wave\Http\Controllers\ImageController@index')->name('wave.imageinsert');
