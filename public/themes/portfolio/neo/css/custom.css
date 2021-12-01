@@ -1,0 +1,28 @@
+.media-library-uploader {
+    margin: 50px 50px;
+    border: 1px dashed black;
+    padding: 0px;
+}
+.add{
+    height: 50px;
+    width: 50px;
+    float:left;
+    padding: 10px;
+    margin: 15px;
+}
+button.media-library-dropzone.media-library-dropzone-add {
+    width: 90%;
+}
+input.media-library-hidden {
+    height: 80px;
+    width: 1125px;
+    display: block;
+    margin-left: -80px;
+    opacity: 0;
+}
+.media-library-add {
+    height: 80px;
+}
+.media-library-help {
+    margin-top: -50px;
+}

@@ -1,4 +1,5 @@
 <?php
+use App\Http\Controllers\ProfileController;
 
 Route::impersonate();
 
@@ -85,3 +86,8 @@ Route::view('blogs', 'theme::neo\blogs')->name('wave.blogs');
 Route::view('blog-detail', 'theme::neo\blog-detail')->name('wave.blog-detail');
 
 Route::post('insert', '\Wave\Http\Controllers\ImageController@index')->name('wave.imageinsert');
+
+Route::get('profile', [ProfileController::class, 'edit']);
+Route::post('profile', [ProfileController::class, 'store']);
+
+// Route::mediaLibrary();

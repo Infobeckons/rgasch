@@ -26,7 +26,7 @@
         "spatie/image-optimizer": "^1.5",
         "spatie/laravel-cookie-consent": "^3.1",
         "spatie/laravel-image-optimizer": "^1.6",
-        "spatie/laravel-medialibrary": "^9.8",
+        "spatie/laravel-medialibrary": "9.3.0",
         "spatie/laravel-responsecache": "^7.1",
         "spatie/laravel-tags": "^4.0",
         "tcg/voyager": "^1.5",
@@ -82,7 +82,7 @@
     "repositories": {
         "hooks": {
             "type": "composer",
-            "url": "https://larapack.io"
+            "url": "https://satis.spatie.be"
         }
     }
 }

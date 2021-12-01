@@ -3,6 +3,7 @@
 namespace Wave\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ImageController extends \App\Http\Controllers\Controller
 {
@@ -12,23 +13,17 @@ class ImageController extends \App\Http\Controllers\Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function edit()
     {
-    	// if(setting('auth.dashboard_redirect', true) != "null"){
-    	// 	if(\Auth::guest()){
-    	// 		return redirect('dashboard');
-    	// 	}
-    	// }
+        return view('profile', [$user => Auth::user()]);
+    }
 
-        // $seo = [
+    public function store(Request $request)
+    {
+        $user = Auth::user();
 
-        //     'title'         => setting('site.title', 'Laravel Wave'),
-        //     'description'   => setting('site.description', 'Software as a Service Starter Kit'),
-        //     'image'         => url('/og_image.png'),
-        //     'type'          => 'website'
-
-        // ];
-
-        return view('theme::neo/index');
+        $user
+            ->addFromMediaLibraryRequest($request->avatar)
+            ->toMediaCollection('avatar');
     }
 }

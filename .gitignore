@@ -4,6 +4,7 @@
 /public/.well-known
 /storage/*.key
 /vendor
+
 /.idea
 /.vagrant
 /wave-pro
