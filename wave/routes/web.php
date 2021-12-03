@@ -89,5 +89,3 @@ Route::post('insert', '\Wave\Http\Controllers\ImageController@index')->name('wav
 
 Route::get('profile', [ProfileController::class, 'edit']);
 Route::post('profile', [ProfileController::class, 'store']);
-
-// Route::mediaLibrary();

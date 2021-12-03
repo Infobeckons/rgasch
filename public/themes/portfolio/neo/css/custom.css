@@ -19,6 +19,7 @@ input.media-library-hidden {
     display: block;
     margin-left: -80px;
     opacity: 0;
+    cursor:pointer;
 }
 .media-library-add {
     height: 80px;

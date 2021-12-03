@@ -40,11 +40,11 @@
 						<img class="add" src="{{asset('themes/portfolio/neo/images/plus.png')}}" accept="image/png,image/jpeg,application/pdf" for="img" />
 						<button type="button" class="media-library-dropzone media-library-dropzone-add">
 						
-							<input type="file" accept="image/png,image/jpeg,application/pdf" id="img" dusk="main-uploader" class="media-library-hidden"/>
+							<input type="file" accept="image/png,image/jpeg,application/pdf" id="img" dusk="main-uploader" name="image" class="media-library-hidden"/>
 							 <div class="media-library-placeholder">
 								 <span class="media-library-button media-library-button-info">
 									<div class="media-library-help">
-										
+										{{-- <x-media-library-attachment name="avatar"/> --}}
 										<span>Select or drag max 1 file | PNG, JPEG, PDF | &lt; 1024KB</span>
 									</div>
 									</span> 
@@ -73,7 +73,12 @@
 			
 			
 			</form>
-			
+			{{-- <script type="text/javascript">
+				function open(){
+					var modal =document.getElementById('open');
+					modal.style.display="block";
+				}
+			</script> --}}
 			<div id="upload-modal" x-data="{ open: false }" x-init="$watch('open', value => {
 				  if (value === true) { document.body.classList.add('overflow-hidden') }
 				  else { document.body.classList.remove('overflow-hidden'); clearInputField(); }

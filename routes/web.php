@@ -23,7 +23,4 @@ Route::group(['prefix' => 'admin'], function () {
 // Include Wave Routes
 Wave::routes();
 
-// Route::group(['prefix' => 'media'], function () {
-//     Route::mediaLibrary();
-// });
 // Route::mediaLibrary();

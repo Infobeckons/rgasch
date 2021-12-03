@@ -50,6 +50,7 @@
     <!-- Styles -->
     <link href="{{ asset('themes/' . $theme->folder . '/css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('themes/portfolio/neo/css/custom.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">.
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.6.0/dist/alpine.min.js" defer></script>
 </head>
 {{-- <iframe src="{{route('wave.load')}}" loading="lazy" style="height: 100%; margin-bottom:100px;"></iframe> --}}
