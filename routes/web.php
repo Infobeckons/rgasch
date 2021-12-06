@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,4 +24,8 @@ Route::group(['prefix' => 'admin'], function () {
 // Include Wave Routes
 Wave::routes();
 
-// Route::mediaLibrary();
+Route::mediaLibrary();
+
+Route::get('profile', [ProfileController::class, 'edit']);
+Route::post('profile', [ProfileController::class, 'store']);
+

@@ -190,6 +190,7 @@ return [
         Laravel\Tinker\TinkerServiceProvider::class,
         Larapack\Hooks\HooksServiceProvider::class,
         Larapack\VoyagerHooks\VoyagerHooksServiceProvider::class,
+        Spatie\MediaLibraryPro\MediaLibraryProServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -255,6 +256,7 @@ return [
         'Image' => Intervention\Image\Facades\Image::class,
         'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
         'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
+        'MediaLibraryPro' => Illuminate\Foundation\Http\FormRequest::class,
     ],
 
 ];

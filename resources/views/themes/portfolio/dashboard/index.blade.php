@@ -1,8 +1,10 @@
 @extends('theme::layouts.app')
 
 @section('content')
+{{-- @include("import { MediaLibraryAttachment } from '@spatie/media-library-pro-vue3-attachment' "); --}}
 
-<link rel="stylesheet" href="{{asset('themes/portfolio/neo/css/style.css')}}">
+<link rel="stylesheet" href="{{asset('css/styles.css')}}">
+<link rel="stylesheet" href="{{asset('themes/portfolio/neo/js/index.js')}}">
 
 	<div class="flex flex-col px-10 mx-auto my-6 lg:flex-row max-w-7xl xl:px-5">
 	    <div class="flex flex-col justify-start flex-1 mb-5 overflow-hidden bg-white border rounded-lg lg:mr-3 lg:mb-0 border-gray-150">
@@ -31,11 +33,28 @@
 			</div> --}}
 			<form method="POST" action="{{route('wave.imageinsert')}}">
 				@csrf
+				{{-- <x-grid>
+				@csrf
+			<x-field label="name">
+				<x-input id="name" name="name" autocomplete="off" placeholder="Your Name" value="{{old('name', $formSubmission->name)}}"></x-input>
+			</x-field>
+
+			<x-field label='Images'>
+				<x-media-library-collection name="images" :model="$formSubmission" collection="images" max-items="3" rules="mimes:png,jpeg"/>
+			</x-field> --}}
+			{{-- <x-media-library-collection name="media" rules="mimes:png,jpeg"/> --}}
+			<x-media-library-attachment name="avatar" />
+			<x-media-library-attachment name="media" />
 			
-				{{-- <input id="name" name="name"> --}}
+
+
+			{{-- <x-media-library-attachment name="avatar" /> --}}
+   
+				
 			
+			{{-- <x-media-library-collection name="media" properties-view="uploads.partials.properties"/> --}}
 				{{-- <x-media-library-uploader name="media" rules="mimes:png,jpeg"/> --}}
-				<div class="media-library-uploader">
+				{{-- <div class="media-library-uploader">
 					<div accept="image/png,image/jpeg,application/pdf" for="img" class="media-library-add">
 						<img class="add" src="{{asset('themes/portfolio/neo/images/plus.png')}}" accept="image/png,image/jpeg,application/pdf" for="img" />
 						<button type="button" class="media-library-dropzone media-library-dropzone-add">
@@ -44,25 +63,26 @@
 							 <div class="media-library-placeholder">
 								 <span class="media-library-button media-library-button-info">
 									<div class="media-library-help">
-										{{-- <x-media-library-attachment name="avatar"/> --}}
+										
 										<span>Select or drag max 1 file | PNG, JPEG, PDF | &lt; 1024KB</span>
 									</div>
 									</span> 
 									<!---->
 								</div> 
-								{{-- <div class="media-library-help">
+								<div class="media-library-help">
 									<span>Select or drag max 1 file | PNG, JPEG, PDF | &lt; 1024KB</span>
-								</div> --}}
+								</div>
 							</button>
 						</div>
 					</div>
-				
+				 --}}
 					<center>
 				<button type="submit" class="btn btn-pills btn-primary">Submit</button>
 			</center>
+				{{-- </x-grid> --}}
 			</form>
 
-			<form action="{{ route('wave.imageinsert') }}" method="POST" enctype="multipart/form-data">
+			{{-- <form action="{{ route('wave.imageinsert') }}" method="POST" enctype="multipart/form-data">
 				@csrf
 				<div class="relative flex flex-col px-10 py-8 lg:flex-row">
 				
@@ -72,14 +92,20 @@
 			
 			
 			
-			</form>
+			</form> --}}
 			{{-- <script type="text/javascript">
 				function open(){
 					var modal =document.getElementById('open');
 					modal.style.display="block";
 				}
 			</script> --}}
-			<div id="upload-modal" x-data="{ open: false }" x-init="$watch('open', value => {
+
+
+
+
+
+
+			{{-- <div id="upload-modal" x-data="{ open: false }" x-init="$watch('open', value => {
 				  if (value === true) { document.body.classList.add('overflow-hidden') }
 				  else { document.body.classList.remove('overflow-hidden'); clearInputField(); }
 				});" x-show="open" class="fixed inset-0 z-10 z-30 overflow-y-auto">
@@ -116,7 +142,7 @@
 							</span>
 						</div>
 					</div>
-			
+			 --}}
 		
 	
 	         

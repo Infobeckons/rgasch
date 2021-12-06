@@ -14,12 +14,13 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="url" content="{{ url('/') }}">
 
-    <link rel="icon" href="{{ setting('site.favicon', '/wave/favicon.png') }}" type="image/x-icon">
+    {{-- <link rel="icon" href="{{ setting('site.favicon', '/wave/favicon.png') }}" type="image/x-icon"> --}}
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    
+    <link rel="icon" href="{{ asset('themes/portfolio/images/favicon.ico') }}" type="image/x-icon">
 
     
     <link href="{{ asset('themes/' . $theme->folder . '/css/app.css') }}" rel="stylesheet">
-   
 
     {{-- Social Share Open Graph Meta Tags --}}
     @if(isset($seo->title) && isset($seo->description) && isset($seo->image))
@@ -49,8 +50,9 @@
 
     <!-- Styles -->
     <link href="{{ asset('themes/' . $theme->folder . '/css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('themes/portfolio/neo/css/custom.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}">.
+    {{-- <link href="{{ asset('themes/portfolio/neo/css/custom.css') }}" rel="stylesheet"> --}}
+    {{-- <link href="{{ asset('css/main.css') }}" rel="stylesheet"> --}}
+    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.6.0/dist/alpine.min.js" defer></script>
 </head>
 {{-- <iframe src="{{route('wave.load')}}" loading="lazy" style="height: 100%; margin-bottom:100px;"></iframe> --}}
