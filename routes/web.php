@@ -29,3 +29,8 @@ Route::mediaLibrary();
 Route::get('profile', [ProfileController::class, 'edit']);
 Route::post('profile', [ProfileController::class, 'store']);
 
+
+
+Route::get('client',[MediaController::class,'index'])->name('client');
+Route::get('client/create',[MediaController::class,'create'])->name('client.create');
+Route::post('client/store',[MediaController::class,'store'])->name('client.store');

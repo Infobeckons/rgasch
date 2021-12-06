@@ -1,10 +1,12 @@
 @extends('theme::layouts.app')
 
 @section('content')
-{{-- @include("import { MediaLibraryAttachment } from '@spatie/media-library-pro-vue3-attachment' "); --}}
 
-<link rel="stylesheet" href="{{asset('css/styles.css')}}">
-<link rel="stylesheet" href="{{asset('themes/portfolio/neo/js/index.js')}}">
+{{-- <link rel="stylesheet" href="{{asset('css/styles.css')}}"> --}}
+{{-- <link rel="stylesheet" href="{{asset('themes/portfolio/neo/js/alpine.js')}}"> --}}
+{{-- <link rel="stylesheet" href="{{asset('js/index.js')}}" type="module"> --}}
+{{-- <script type="module" src="{{asset('js/index.js')}}" ></script> --}}
+
 
 	<div class="flex flex-col px-10 mx-auto my-6 lg:flex-row max-w-7xl xl:px-5">
 	    <div class="flex flex-col justify-start flex-1 mb-5 overflow-hidden bg-white border rounded-lg lg:mr-3 lg:mb-0 border-gray-150">
@@ -44,11 +46,13 @@
 			</x-field> --}}
 			{{-- <x-media-library-collection name="media" rules="mimes:png,jpeg"/> --}}
 			<x-media-library-attachment name="avatar" />
-			<x-media-library-attachment name="media" />
+			<x-media-library-attachment  name="media" />
+			<x-media-library-attachment multiple name="media" max-items="10"  rules="mimes:png,jpg,jpeg,pdf|max:15360" required>
+			</x-media-library-attachment>
+			{{-- @include('media-library::components.media-library-attachment') --}}
 			
-
-
-			{{-- <x-media-library-attachment name="avatar" /> --}}
+			
+			{{-- <x-media-library-collection name="avatar" /> --}}
    
 				
 			
@@ -77,6 +81,7 @@
 					</div>
 				 --}}
 					<center>
+						{{-- <link rel="stylesheet" href="{{asset('themes/portfolio/neo/css/style.css')}}"> --}}
 				<button type="submit" class="btn btn-pills btn-primary">Submit</button>
 			</center>
 				{{-- </x-grid> --}}

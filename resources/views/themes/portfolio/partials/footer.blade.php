@@ -213,7 +213,7 @@
 @endif
 
 <!-- Scripts -->
-<script src="{{ asset('themes/' . $theme->folder . '/js/app.js') }}"></script>
+<script src="{{ asset('themes/' . $theme->folder . '/neo/js/app.js') }}"></script>
 
 @yield('javascript')
 
