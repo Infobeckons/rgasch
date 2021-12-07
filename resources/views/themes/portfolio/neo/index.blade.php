@@ -15,7 +15,7 @@
         <meta content="https://shreethemes.in/" name="website" />
         <meta content="3.1.0" name="version" />
         <!-- favicon -->
-        <link rel="shortcut icon" href="{{asset('themes/portfolio/neo/images/favicon.ico')}}">
+        <link rel="icon" href="{{ asset('themes/portfolio/images/favicon.ico') }}" type="image/x-icon">
         <!-- Bootstrap -->
         <link href="{{asset('themes/portfolio/neo/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
         <!-- Tobii Lightbox -->

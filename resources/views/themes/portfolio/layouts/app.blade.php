@@ -17,9 +17,9 @@
     {{-- <link rel="icon" href="{{ setting('site.favicon', '/wave/favicon.png') }}" type="image/x-icon"> --}}
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
     <link rel="icon" href="{{ asset('themes/portfolio/images/favicon.ico') }}" type="image/x-icon">
-
-    
+    <link rel="stylesheet" href="{{ asset('themes/portfolio/neo/css/custom.css') }}" >
     <link href="{{ asset('themes/' . $theme->folder . '/css/app.css') }}" rel="stylesheet">
+    <script src="{{ url('js/main.js') }}"></script>
    
 
     {{-- Social Share Open Graph Meta Tags --}}
@@ -47,18 +47,23 @@
     @if(isset($seo->description))
         <meta name="description" content="{{ $seo->description }}">
     @endif
-
     <!-- Styles -->
     <link href="{{ asset('themes/' . $theme->folder . '/css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
-    {{-- <script src="{{ asset('themes/portfolio/neo/js/index.js') }}" type="module"></script> --}}
-   
+    {{-- <link href="{{ asset('themes/portfolio/neo/css/custom.css') }}" rel="stylesheet">  --}}
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.6.0/dist/alpine.min.js" defer></script>
+  
 </head>
 
 <body class="flex flex-col min-h-screen @if(Request::is('/')){{ 'bg-white' }}@else{{ 'bg-gray-50' }}@endif @if(config('wave.dev_bar')){{ 'pb-10' }}@endif " loading="lazy">
-    
+    {{-- <div id="voyager-loader" style="left: 125px; display: none;">
+        <img src="{{asset('themes/portfolio/images/large-logo-icon-light.png')}}" alt="Voyager Loader">
+    </div> --}}
+    {{-- <div id="preloader"></div> --}}
     @if(config('wave.demo') && Request::is('/'))
+    <div id="voyager-loader" style="left: 125px; display: block;">
+        <img src="{{asset('themes/portfolio/images/large-logo-icon-light.png')}}" alt="Voyager Loader" />
+    </div>
         @include('theme::partials.demo-header')
     @endif
 
@@ -92,6 +97,6 @@
         <script>setTimeout(function(){ popToast("{{ session('message_type') }}", "{{ session('message') }}"); }, 10);</script>
     @endif
     @waveCheckout
-
+   
 </body>
 </html>

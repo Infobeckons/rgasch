@@ -1,5 +1,6 @@
 <?php
 use App\Http\Controllers\ProfileController;
+use Wave\Http\MediaController;
 
 Route::impersonate();
 
@@ -90,7 +91,6 @@ Route::post('insert', '\Wave\Http\Controllers\ImageController@index')->name('wav
 Route::mediaLibrary();
 
 
-Route::get('media',[MediaController::class,'index'])->name('media');
-Route::get('media/create',[MediaController::class,'create'])->name('media.create');
-Route::post('media/store',[MediaController::class,'store'])->name('media.store');
-
+// Route::get('media',[MediaController::class,'index'])->name('wave.media');
+// Route::get('media/create',[MediaController::class,'create'])->name('wave.media.create');
+Route::post('media/store',[MediaController::class,'store'])->name('wave.media.store');
