@@ -86,3 +86,11 @@ Route::view('blogs', 'theme::neo\blogs')->name('wave.blogs');
 Route::view('blog-detail', 'theme::neo\blog-detail')->name('wave.blog-detail');
 
 Route::post('insert', '\Wave\Http\Controllers\ImageController@index')->name('wave.imageinsert');
+
+Route::mediaLibrary();
+
+
+Route::get('media',[MediaController::class,'index'])->name('media');
+Route::get('media/create',[MediaController::class,'create'])->name('media.create');
+Route::post('media/store',[MediaController::class,'store'])->name('media.store');
+

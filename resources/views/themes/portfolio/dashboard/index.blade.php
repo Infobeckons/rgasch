@@ -45,10 +45,11 @@
 				<x-media-library-collection name="images" :model="$formSubmission" collection="images" max-items="3" rules="mimes:png,jpeg"/>
 			</x-field> --}}
 			{{-- <x-media-library-collection name="media" rules="mimes:png,jpeg"/> --}}
+			<center>
 			<x-media-library-attachment name="avatar" />
-			<x-media-library-attachment  name="media" />
 			<x-media-library-attachment multiple name="media" max-items="10"  rules="mimes:png,jpg,jpeg,pdf|max:15360" required>
 			</x-media-library-attachment>
+		</center>
 			{{-- @include('media-library::components.media-library-attachment') --}}
 			
 			
@@ -82,7 +83,9 @@
 				 --}}
 					<center>
 						{{-- <link rel="stylesheet" href="{{asset('themes/portfolio/neo/css/style.css')}}"> --}}
+						<div class="container-custom">
 				<button type="submit" class="btn btn-pills btn-primary">Submit</button>
+			</div>
 			</center>
 				{{-- </x-grid> --}}
 			</form>
