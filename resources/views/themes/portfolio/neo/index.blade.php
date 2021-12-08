@@ -30,18 +30,9 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
 
-
-	{{-- <style type="text/css">
-		img{width:100%;height:250px;border:1px solid #e1e1e1;}
-		.col-md-4{padding-bottom: 70px;}
-		h2{padding-bottom: 20px;}
-	</style> --}}
     </head>
 
     <body>
-        {{-- <div class="whole-page-overlay" id="whole_page_loader">
-            <img class="center-loader"  style="height:100px;" src="{{asset('themes/portfolio/neo/images/logo.png')}}" style="background:white; align:center"/>
-        </div> --}}
      
         @extends('theme::menu2.path')
         <!-- Start Hero -->
@@ -268,11 +259,12 @@
             const tobii = new Tobii()
         </script>
 
-<script type="text/javascript">
+{{-- <script type="text/javascript">
 	$("img").lazyload({
+        duration : 200,
 	    effect : "fadeIn"
 	});
-</script>
+</script> --}}
 
     </body>
 

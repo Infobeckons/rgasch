@@ -1,4 +1,4 @@
-.media-library-uploader {
+/* .media-library-uploader {
     margin: 50px 50px;
     border: 1px dashed black;
     padding: 0px;
@@ -47,7 +47,7 @@ input.media-library-hidden {
     margin-right:-50px;
     -webkit-animation:infinite 1s linear infinite;
     animation: infinite 1s linear infinite
-}
+} */
 
 /*--------------------------------------------------------------
 # Preloader
