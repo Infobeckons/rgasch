@@ -13,7 +13,7 @@ class media extends Model
     use HasFactory, InteractsWithMedia;
 
     protected $fillable = [
-        'name',
-        'email',
+        'name'
     ];
+    public $timestamps=false;
 }

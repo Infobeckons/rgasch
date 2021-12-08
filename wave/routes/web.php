@@ -93,4 +93,4 @@ Route::mediaLibrary();
 
 // Route::get('media',[MediaController::class,'index'])->name('wave.media');
 // Route::get('media/create',[MediaController::class,'create'])->name('wave.media.create');
-Route::post('media/store',[MediaController::class,'store'])->name('wave.media.store');
+Route::post('media/store','\Wave\Http\Controllers\MediaController@store')->name('wave.mediastore');

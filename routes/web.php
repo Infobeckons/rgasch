@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use \Wave\Http\Controllers\MediaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,7 +30,7 @@ Route::mediaLibrary();
 
 Route::get('media',[MediaController::class,'index'])->name('client');
 Route::get('media/create',[MediaController::class,'create'])->name('client.create');
-Route::post('media/store',[MediaController::class,'store'])->name('client.store');
+Route::post('media/store',[MediaController::class,'store'])->name('wave.mediastore');
 
 
 // Route::get('profile', [ProfileController::class, 'edit']);
