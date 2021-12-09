@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class user_media extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'name',
+        'path',
+        'tags'
+    ];
+    public $timestamps=false;
 }

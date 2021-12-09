@@ -94,8 +94,10 @@ Route::mediaLibrary();
 // Route::get('media',[MediaController::class,'index'])->name('wave.media');
 // Route::get('media/create',[MediaController::class,'create'])->name('wave.media.create');
 Route::post('media/store','\Wave\Http\Controllers\MediaController@store')->name('wave.mediastore');
-Route::get('media/store', function(){
-    Media::create()
-    ->addMedia(storage_path('users/default.png'))
-    ->toMediaCollection();
-});
+
+// Route::get('dashboard', '\Wave\Http\Controllers\MediaController@index')->name('wave.mediaindex');
+// Route::get('media/store', function(){
+//     Media::create()
+//     ->addMedia(storage_path('users/default.png'))
+//     ->toMediaCollection();
+// });

@@ -1,6 +1,16 @@
 @extends('theme::layouts.app')
 
 @section('content')
+<style>
+	.border-tags{
+		align-self: left;
+		margin-right: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+		height: 50px;
+		width: auto;
+	}
+</style>
 {{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> --}}
 	<div class="flex flex-col px-10 mx-auto my-6 lg:flex-row max-w-7xl xl:px-5">
 	    <div class="flex flex-col justify-start flex-1 mb-5 overflow-hidden bg-white border  style="padding-left:30px;"rounded-lg lg:mr-3 lg:mb-0 border- style="padding-left:30px;"gray-150">
@@ -27,21 +37,21 @@
 				<div class="name" style="height:50px; width:auto; ">
 					<label>Name</label>
 					<br>
-					<input type="text" name="name" placeholder="Name" style="border:1px solid black;"> 
+					<input type="text" name="name" value="" placeholder="Name" style="height: 30px; width: 120px; border-radius: 10px; border: 1px solid black"> 
 				</div>
 				<x-media-library-attachment name="avatar" />
-				<input type="text" name="name"> 
+			
 				{{-- <x-media-library-attachment multiple name="media" max-items="10"  rules="mimes:png,jpg,jpeg,pdf|max:15360" required>
 				</x-media-library-attachment> --}}
 				<div class="tech" for="tags" style="overflow-x:scroll; width:500px; height:50px; z-index:100; overflow-y:hidden;">
-					<div class="second" style="height: 50px; width:auto; z-index:10" >
-						<input type="button" class="border" style="padding:5px 30px 5px 30px;"  value="Tag1">
-						<input type="button" class="border" style="padding:5px 30px 5px 30px;"  value="Tag2">
-						<input type="button" class="border" style="padding:5px 30px 5px 30px;"  value="Tag3">
-						<input type="button" class="border" style="padding:5px 30px 5px 30px;"  value="Tag4">
-						<input type="button" class="border" style="padding:5px 30px 5px 30px;"  value="Tag5">
-						<input type="button" class="border" style="padding:5px 30px 5px 30px;"  value="Tag6">
-						<input type="button" class="border" style="padding:5px 30px 5px 30px;"  value="Tag7">
+					<div class="second" style="height: 50px; width:auto; z-index:10">
+						<input type="checkbox" class="border-tags" value="Tag1" placeholder="Tag1" name="Tag1">
+						<input type="checkbox" class="border-tags" value="Tag2" placeholder="Tag2" name="Tag2">
+						<input type="checkbox" class="border-tags" value="Tag3" placeholder="Tag3" name="Tag3">
+						<input type="checkbox" class="border-tags" value="Tag4" placeholder="Tag4" name="Tag4">
+						<input type="checkbox" class="border-tags" value="Tag5" placeholder="Tag5" name="Tag5">
+						<input type="checkbox" class="border-tags" value="Tag6" placeholder="Tag6" name="Tag6">
+						<input type="checkbox" class="border-tags" value="Tag7" placeholder="Tag7" name="Tag7">
 				</div>
 			</div>
 			</center>

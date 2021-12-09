@@ -20,7 +20,6 @@
 			<div class="custom" style="height: 100px; margin-top:10px;">
 			<button class="btn btn-pills btn-primary" >Arrange Tags</button></div>
 		</div>
-
 	</div>
 
 @endsection
