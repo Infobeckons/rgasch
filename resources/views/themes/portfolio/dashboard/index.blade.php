@@ -24,7 +24,13 @@
 			<form method="POST" action="{{route('wave.mediastore')}}">
 				@csrf
 			<center>
+				<div class="name" style="height:50px; width:auto; ">
+					<label>Name</label>
+					<br>
+					<input type="text" name="name" placeholder="Name" style="border:1px solid black;"> 
+				</div>
 				<x-media-library-attachment name="avatar" />
+				<input type="text" name="name"> 
 				{{-- <x-media-library-attachment multiple name="media" max-items="10"  rules="mimes:png,jpg,jpeg,pdf|max:15360" required>
 				</x-media-library-attachment> --}}
 				<div class="tech" for="tags" style="overflow-x:scroll; width:500px; height:50px; z-index:100; overflow-y:hidden;">

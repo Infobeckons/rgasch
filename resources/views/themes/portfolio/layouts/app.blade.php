@@ -55,6 +55,17 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/5.4.1/shuffle.min.js.map">
     {{-- <script src="{{ asset('themes/portfolio/neo/js/shuffle.min.js.map')}}"></script> --}}
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.6.0/dist/alpine.min.js" defer></script>
+
+       <!-- Bootstrap -->
+       <link href="{{asset('themes/portfolio/neo/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
+       <!-- Tobii Lightbox -->
+       <link href="{{asset('themes/portfolio/neo/css/tobii.min.css')}}" rel="stylesheet" type="text/css" />
+       <!-- Icons -->
+       <link href="{{asset('themes/portfolio/neo/css/materialdesignicons.min.css')}}" rel="stylesheet" type="text/css" />
+       <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+       <!-- Main Css -->
+       <link href="{{asset('themes/portfolio/neo/css/style.css')}}" rel="stylesheet" type="text/css" id="theme-opt" />
+       {{-- <link href="{{asset('themes/portfolio/neo/css/colors/default.css')}}" rel="stylesheet" id="color-opt">  --}}
   
 </head>
 {{-- <div id="preloader"></div> --}}

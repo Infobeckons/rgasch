@@ -3,12 +3,24 @@
 namespace Wave\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Media;
+use App\User_Media;
 use WaveFacade;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Storage;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
+use Spatie\MediaLibraryPro\Request\UploadRequest;
+
+Route::get('media/store', function(){
+    Media::create()
+    ->addMedia(storage_path('users/default.png'))
+    ->toMediaCollection();
+});
 
 class MediaController extends \App\Http\Controllers\Controller
 {
+    use InteractsWithMedia;
     //
     public function index()
     {    
@@ -22,11 +34,14 @@ class MediaController extends \App\Http\Controllers\Controller
     }
     
     public function store(Request $request){
-        $input = $request->all();
-        $client = Media::create($input);
+        // $input = $request->input('avatar');
+        $client = User_Media::insert([
+            'name'=>$request->input('name'),
+            'path'=>$request->file('avatar')
+        ]);
         if($request->hasFile('avatar') && $request->file('avatar')->isValid()){
             $client->addMediaFromRequest('avatar')->toMediaCollection('avatar');
         }
-        return redirect()->route('dashboard')->with('success');
+        return redirect()->route('wave.dashboard')->with('success');
     }
 }

@@ -2340,4 +2340,8 @@ ul .t-ltr-dark {
     display: none;
   }
 }
+
+button.media-library-dropzone.media-library-dropzone-add {
+  border: 2px dashed lightgray;
+}
 /*# sourceMappingURL=style.css.map */
