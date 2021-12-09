@@ -5,24 +5,16 @@ namespace Wave\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User_Media;
 use App\Media;
+use App\Tag;
 use WaveFacade;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Facades\Input;
-use Spatie\MediaLibrary\HasMedia;
-use Spatie\MediaLibrary\InteractsWithMedia;
-use Spatie\MediaLibraryPro\Request\UploadRequest;
 
-// Route::get('media/store', function(){
-//     Media::create()
-//     ->addMedia(storage_path('users/default.png'))
-//     ->toMediaCollection();
-// });
 
 class MediaController extends \App\Http\Controllers\Controller
 {
-    use InteractsWithMedia;
+    // use InteractsWithMedia;
+    // use HasTags;
     //
     public function index()
     {    
@@ -35,17 +27,21 @@ class MediaController extends \App\Http\Controllers\Controller
         return view('create');
     }
     
+    
     public function store(Request $request){
-        $tag = [
-            'tags' => $request->input('Tag1'), 'tags' => $request->input('Tag2'), 'tags' => $request->input('Tag3'), 'tags' => $request->input('Tag4'),
-            'tags' => $request->input('Tag5'), 'tags' => $request->input('Tag6'), 'tags' => $request->input('Tag7'),
-        ];
-        $tags = expect(',', $request->$tag);
+        // $tag = [
+        //     'tags' => $request->input('Tag1'), 'tags' => $request->input('Tag2'), 'tags' => $request->input('Tag3'), 'tags' => $request->input('Tag4'),
+        //     'tags' => $request->input('Tag5'), 'tags' => $request->input('Tag6'), 'tags' => $request->input('Tag7'),
+        // ];
+        // $tags = implode(",", $request->$tag);
         $attribute = [
-            'name'   => $request->input('name'),
-            'path'    => $request->file('avatar'),
-            'tags' => $request->$tags
+            'name'      => $request->input('name'),
+            'path'      => $request->input('avatar'),
+            'tags'      => $request->input('Tag4')
         ];
+        // $tag = Tag::create(['name' => $request->input('Tag4'),
+        //                                 'slug' => 'my-tag4']);
+        // $taginsert = User_Media::attachTag('Tag4');
         $client = User_Media::create($attribute);
         if($request->hasFile('avatar') && $request->file('avatar')->isValid()){
             $client->addMediaFromRequest('avatar')->toMediaCollection('avatar');
