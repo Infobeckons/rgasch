@@ -31,15 +31,15 @@
 		   
 	        <div class="relative p-5">
 	            
-			<form method="POST" action="{{route('wave.mediastore')}}">
+			<form action="{{route('wave.mediastore')}}" method="POST" >
 				@csrf
 			<center>
-				<div class="name" style="height:50px; width:auto; ">
+				<div class="name" style="height:50px; width:auto;">
 					<label>Name</label>
 					<br>
 					<input type="text" name="name" value="" placeholder="Name" style="height: 30px; width: 120px; border-radius: 10px; border: 1px solid black"> 
 				</div>
-				<x-media-library-attachment name="avatar" />
+				<x-media-library-attachment name="media" rules="mimes:png,jpeg,pdf|max:15360"/>
 			
 				{{-- <x-media-library-attachment multiple name="media" max-items="10"  rules="mimes:png,jpg,jpeg,pdf|max:15360" required>
 				</x-media-library-attachment> --}}
