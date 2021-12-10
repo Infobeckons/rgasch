@@ -16,7 +16,7 @@ class RolesTableSeeder extends Seeder
     {
 
 
-        \DB::table('roles')->delete();
+        \DB::table('roles')->delete('cascade');
 
         \DB::table('roles')->insert(array (
             0 =>
