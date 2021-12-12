@@ -7,7 +7,7 @@
 		margin-right: 20px;
 		padding-left: 20px;
 		padding-right: 20px;
-		height: 50px;
+		/* height: 50px; */
 		width: auto;
 	}
 </style>
@@ -34,24 +34,27 @@
 			<form action="{{route('wave.mediastore')}}" method="POST" >
 				@csrf
 			<center>
-				<div class="name" style="height:50px; width:auto;">
+				{{-- <div class="name" style="height:50px; width:auto;">
 					<label>Name</label>
 					<br>
 					<input type="text" name="name" value="" placeholder="Name" style="height: 30px; width: 120px; border-radius: 10px; border: 1px solid black"> 
+				</div> --}}
+				<div class="name" style="height:50px; width:auto;">
+					<h4>Insert Your Media Files Here::</h4>
 				</div>
 				<x-media-library-attachment name="media" rules="mimes:png,jpeg,pdf|max:15360"/>
 			
 				{{-- <x-media-library-attachment multiple name="media" max-items="10"  rules="mimes:png,jpg,jpeg,pdf|max:15360" required>
 				</x-media-library-attachment> --}}
-				<div class="tech" for="tags" style="overflow-x:scroll; width:500px; height:50px; z-index:100; overflow-y:hidden;">
+				<div class="tech" for="tags" style="overflow-x:scroll; width:500px; height:150px; z-index:100; ">
 					<div class="second" style="height: 50px; width:auto; z-index:10">
-						<input type="checkbox" class="border-tags" value="Tag1" placeholder="Tag1" name="Tag1">
-						<input type="checkbox" class="border-tags" value="Tag2" placeholder="Tag2" name="Tag2">
-						<input type="checkbox" class="border-tags" value="Tag3" placeholder="Tag3" name="Tag3">
-						<input type="checkbox" class="border-tags" value="Tag4" placeholder="Tag4" name="Tag4">
-						<input type="checkbox" class="border-tags" value="Tag5" placeholder="Tag5" name="Tag5">
-						<input type="checkbox" class="border-tags" value="Tag6" placeholder="Tag6" name="Tag6">
-						<input type="checkbox" class="border-tags" value="Tag7" placeholder="Tag7" name="Tag7">
+						<input type="checkbox" class="border-tags" value="Tag1" placeholder="Tag1" name="Tag1">Tag1<br>
+						<input type="checkbox" class="border-tags" value="Tag2" placeholder="Tag2" name="Tag2">Tag2<br>
+						<input type="checkbox" class="border-tags" value="Tag3" placeholder="Tag3" name="Tag3">Tag3<br>
+						<input type="checkbox" class="border-tags" value="Tag4" placeholder="Tag4" name="Tag4">Tag4<br>
+						<input type="checkbox" class="border-tags" value="Tag5" placeholder="Tag5" name="Tag5">Tag5<br>
+						<input type="checkbox" class="border-tags" value="Tag6" placeholder="Tag6" name="Tag6">Tag6<br>
+						<input type="checkbox" class="border-tags" value="Tag7" placeholder="Tag7" name="Tag7">Tag7<br>
 				</div>
 			</div>
 			</center>

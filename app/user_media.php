@@ -9,7 +9,7 @@ class user_media extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'name',
+        // 'name',
         'path',
         'tags'
     ];

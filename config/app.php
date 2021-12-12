@@ -191,6 +191,7 @@ return [
         Larapack\Hooks\HooksServiceProvider::class,
         Larapack\VoyagerHooks\VoyagerHooksServiceProvider::class,
         Spatie\MediaLibraryPro\MediaLibraryProServiceProvider::class,
+        Spatie\Tags\TagsServiceProvider::class,
 
         /*
          * Application Service Providers...

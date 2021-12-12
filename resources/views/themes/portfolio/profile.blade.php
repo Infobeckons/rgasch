@@ -18,7 +18,11 @@
 			<b><p class="text-lg text-gray-600">Your application info about {{ $user->name }} here</p></b>
 		    {{-- <p class="mt-5 text-lg text-gray-600">You can edit this template inside of <code class="px-2 py-1 font-mono text-base font-medium text-gray-600 bg-indigo-100 rounded-md">resources/views/{{ theme_folder('/profile.blade.php') }}</code></p> --}}
 			<div class="custom" style="height: 100px; margin-top:10px;">
-			<button class="btn btn-pills btn-primary" >Arrange Tags</button></div>
+			<form action="{{route('wave.run')}}" method="post">
+			@csrf
+			<button class="btn btn-pills btn-primary">Arrange Tags</button>
+		</form>
+		</div>
 		</div>
 	</div>
 

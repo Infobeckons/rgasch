@@ -91,3 +91,4 @@ Route::mediaLibrary();
 
 
 Route::post('media/store','\Wave\Http\Controllers\MediaController@store')->name('wave.mediastore');
+Route::post('run','\Wave\Http\Controllers\MediaController@runtag')->name('wave.run');
