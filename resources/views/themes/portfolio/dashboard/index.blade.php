@@ -43,7 +43,7 @@
 					<h4>Insert Your Media Files Here::</h4>
 				</div>
 				<x-media-library-attachment name="media" rules="mimes:png,jpeg,pdf|max:15360"/>
-			
+				@dump(session()->all())
 				{{-- <x-media-library-attachment multiple name="media" max-items="10"  rules="mimes:png,jpg,jpeg,pdf|max:15360" required>
 				</x-media-library-attachment> --}}
 				<div class="tech" for="tags" style="overflow-x:scroll; width:500px; height:150px; z-index:100; ">

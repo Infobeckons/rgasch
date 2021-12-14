@@ -21,11 +21,13 @@ class MediaController extends Controller
     
     public function store(Request $request)
     {
-        $input = $request->all();
-        $client = Media::create($input);
-        if($request->hasFile('avatar') && $request->file('avatar')->isValid()){
-            $client->addMediaFromRequest('avatar')->toMediaCollection('avatar');
-        }
-        return redirect()->route('media');
+        // $input = $request->all();
+        // $client = Media::create($input);
+        // if($request->hasFile('avatar') && $request->file('avatar')->isValid()){
+        //     $client->addMediaFromRequest('avatar')->toMediaCollection('avatar');
+        // }
+        // session()->put('client', $client);
+        // dd($client);
+        // return redirect()->route('media');
     }
 }

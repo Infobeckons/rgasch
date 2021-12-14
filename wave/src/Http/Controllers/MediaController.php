@@ -35,14 +35,15 @@ class MediaController extends \App\Http\Controllers\Controller
             'path'  => $request->input('media'), 
             'tags'  =>$media
         ];
-        dd($request->all());
+        // dd($request->all());
         // $media->attachTag('Tag 1');
         // $taginsert = Media::attachTag('Tag4');
         $client = User_Media::create($attribute);
-        
-        if($request->hasFile('media') && $request->file('media')->isValid()){
-            $client->addMediaFromRequest('media')->toMediaCollection('media');
-        }
+        // if($request->hasFile('media') && $request->file('media')->isValid()){
+        //     $client->addMediaFromRequest('media')->toMediaCollection('media')->
+        //     session()->put('client', $client);
+        //     dd($client);
+        // }
         return redirect()->route('wave.dashboard')->with(['message' => 'Media Successfully Added', 'message_type' => 'success']);
     }
     public function runtag(){
