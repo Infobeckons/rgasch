@@ -11,6 +11,15 @@ use WaveFacade;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Spatie\MediaLibraryPro\Rules\Concern\ValidatesMedia;
+use Spatie\MediaLibraryPro\Dto;
+use Illuminate\Http\UploadedFile;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
+use Livewire\FileUploadConfiguration;
+use Livewire\TemporaryUploadedFile;
+use Spatie\MediaLibrary\Conversions\FileManipulator;
+// use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use Spatie\MediaLibraryPro\Models\TemporaryUpload;
 
 class MediaController extends \App\Http\Controllers\Controller
 {
@@ -27,23 +36,54 @@ class MediaController extends \App\Http\Controllers\Controller
         return view('create');
     }
     
+
+    // protected function createFromLocalLivewireUpload(TemporaryUploadedFile $livewireUpload): Media
+    // {
+    //     $uploadedFile = new UploadedFile($livewireUpload->path(), $livewireUpload->getClientOriginalName());
+
+    //     $temporaryUploadModelClass = config('media-library.temporary_upload_model');
+
+    //     $livewireUpload = $temporaryUploadModelClass::createForFile(
+    //         $uploadedFile,
+    //         session()->getId(),
+    //         (string)Str::uuid(),
+    //         $livewireUpload->getClientOriginalName()
+    //     );
+
+    //     return $livewireUpload->getFirstMedia();
+    // }
+
+    // TemporaryUploadedFile $livewireUpload): Media
     public function store(Request $request){
         $media = Media::find(1);
         $media->attachTag('show1');
         $attribute = [
             // 'name' => $request->input('name'),
-            'path'  => $request->input('media'), 
+            'path'  => $request->file('media','file'), 
             'tags'  =>$media
         ];
+        // $uploadedFile = new UploadedFile($livewireUpload->path(), $livewireUpload->getClientOriginalName());
+
+        // $temporaryUploadModelClass = config('media-library.temporary_upload_model');
+
+        // $livewireUpload = $temporaryUploadModelClass::createForFile(
+        //     $uploadedFile,
+        //     session()->getId(),
+        //     (string)Str::uuid(),
+        //     $livewireUpload->getClientOriginalName()
+        // );
+
+        // return $livewireUpload->getFirstMedia();
         // dd($request->all());
         // $media->attachTag('Tag 1');
         // $taginsert = Media::attachTag('Tag4');
         $client = User_Media::create($attribute);
-        // if($request->hasFile('media') && $request->file('media')->isValid()){
-        //     $client->addMediaFromRequest('media')->toMediaCollection('media')->
-        //     session()->put('client', $client);
-        //     dd($client);
-        // }
+        if($request->hasFile('media') && $request->file('media')->isValid()){
+            $client->addMediaFromRequest('media')->toMediaCollection('media');
+            // session()->put('client', $client);
+            // dd($client);
+            //(session()->all());
+        }
         return redirect()->route('wave.dashboard')->with(['message' => 'Media Successfully Added', 'message_type' => 'success']);
     }
     public function runtag(){
