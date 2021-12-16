@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\User_Media;
 use App\Media;
 use App\Tag;
+use App\media_user_map;
 use Illuminate\Foundation\Http\FormRequest;
 use WaveFacade;
 use Illuminate\Support\Facades\Auth;
@@ -55,13 +56,19 @@ class MediaController extends \App\Http\Controllers\Controller
 
     // TemporaryUploadedFile $livewireUpload): Media
     public function store(Request $request){
-        $media = Media::find(1);
-        $media->attachTag('show1');
-        $attribute = [
-            // 'name' => $request->input('name'),
-            'path'  => $request->file('media','file'), 
-            'tags'  =>$media
-        ];
+        // dd($request);
+        $find=$request->media[implode("",array_keys($request->media))]['order'];
+        $media = Media::find($find);
+        $media->attachTags($request->tag);
+        media_user_map::create([
+            'user_id' => Auth::user()->id,
+            'media_id'=> $find
+        ]);
+        // $attribute = [
+        //     // 'name' => $request->input('name'),
+        //     'path'  => $request->file('media','file'), 
+        //     'tags'  =>$media
+        // ];
         // $uploadedFile = new UploadedFile($livewireUpload->path(), $livewireUpload->getClientOriginalName());
 
         // $temporaryUploadModelClass = config('media-library.temporary_upload_model');
@@ -77,13 +84,13 @@ class MediaController extends \App\Http\Controllers\Controller
         // dd($request->all());
         // $media->attachTag('Tag 1');
         // $taginsert = Media::attachTag('Tag4');
-        $client = User_Media::create($attribute);
-        if($request->hasFile('media') && $request->file('media')->isValid()){
-            $client->addMediaFromRequest('media')->toMediaCollection('media');
+        // $client = User_Media::create($attribute);
+        // if($request->hasFile('media') && $request->file('media')->isValid()){
+        //     $client->addMediaFromRequest('media')->toMediaCollection('media');
             // session()->put('client', $client);
             // dd($client);
             //(session()->all());
-        }
+        // }
         return redirect()->route('wave.dashboard')->with(['message' => 'Media Successfully Added', 'message_type' => 'success']);
     }
     public function runtag(){

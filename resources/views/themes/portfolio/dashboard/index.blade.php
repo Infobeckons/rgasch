@@ -48,13 +48,13 @@
 				</x-media-library-attachment> --}}
 				<div class="tech" for="tags" style="overflow-x:scroll; width:500px; height:150px; z-index:100; ">
 					<div class="second" style="height: 50px; width:auto; z-index:10">
-						<input type="checkbox" class="border-tags" value="Tag1" placeholder="Tag1" name="Tag1">Tag1<br>
-						<input type="checkbox" class="border-tags" value="Tag2" placeholder="Tag2" name="Tag2">Tag2<br>
-						<input type="checkbox" class="border-tags" value="Tag3" placeholder="Tag3" name="Tag3">Tag3<br>
-						<input type="checkbox" class="border-tags" value="Tag4" placeholder="Tag4" name="Tag4">Tag4<br>
-						<input type="checkbox" class="border-tags" value="Tag5" placeholder="Tag5" name="Tag5">Tag5<br>
-						<input type="checkbox" class="border-tags" value="Tag6" placeholder="Tag6" name="Tag6">Tag6<br>
-						<input type="checkbox" class="border-tags" value="Tag7" placeholder="Tag7" name="Tag7">Tag7<br>
+						<input type="checkbox" class="border-tags" value="Tag1" placeholder="Tag1" name='tag[]'>Tag1<br>
+						<input type="checkbox" class="border-tags" value="Tag2" placeholder="Tag2" name='tag[]'>Tag2<br>
+						<input type="checkbox" class="border-tags" value="Tag3" placeholder="Tag3" name='tag[]'>Tag3<br>
+						<input type="checkbox" class="border-tags" value="Tag4" placeholder="Tag4" name='tag[]'>Tag4<br>
+						<input type="checkbox" class="border-tags" value="Tag5" placeholder="Tag5" name='tag[]'>Tag5<br>
+						<input type="checkbox" class="border-tags" value="Tag6" placeholder="Tag6" name='tag[]'>Tag6<br>
+						<input type="checkbox" class="border-tags" value="Tag7" placeholder="Tag7" name='tag[]'>Tag7<br>
 				</div>
 			</div>
 			</center>
