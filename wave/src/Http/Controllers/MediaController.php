@@ -69,17 +69,6 @@ class MediaController extends \App\Http\Controllers\Controller
         //     'path'  => $request->file('media','file'), 
         //     'tags'  =>$media
         // ];
-        // $uploadedFile = new UploadedFile($livewireUpload->path(), $livewireUpload->getClientOriginalName());
-
-        // $temporaryUploadModelClass = config('media-library.temporary_upload_model');
-
-        // $livewireUpload = $temporaryUploadModelClass::createForFile(
-        //     $uploadedFile,
-        //     session()->getId(),
-        //     (string)Str::uuid(),
-        //     $livewireUpload->getClientOriginalName()
-        // );
-
         // return $livewireUpload->getFirstMedia();
         // dd($request->all());
         // $media->attachTag('Tag 1');
@@ -87,9 +76,6 @@ class MediaController extends \App\Http\Controllers\Controller
         // $client = User_Media::create($attribute);
         // if($request->hasFile('media') && $request->file('media')->isValid()){
         //     $client->addMediaFromRequest('media')->toMediaCollection('media');
-            // session()->put('client', $client);
-            // dd($client);
-            //(session()->all());
         // }
         return redirect()->route('wave.dashboard')->with(['message' => 'Media Successfully Added', 'message_type' => 'success']);
     }
