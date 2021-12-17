@@ -11,7 +11,6 @@ use Illuminate\Foundation\Http\FormRequest;
 use WaveFacade;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use Spatie\MediaLibraryPro\Rules\Concern\ValidatesMedia;
 use Spatie\MediaLibraryPro\Dto;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;

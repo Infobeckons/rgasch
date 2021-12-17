@@ -10,6 +10,11 @@
 		/* height: 50px; */
 		width: auto;
 	}
+	.label_black{
+		
+		width: 300px;
+		border: 1px dashed black;
+	}
 </style>
 {{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> --}}
 	<div class="flex flex-col px-10 mx-auto my-6 lg:flex-row max-w-7xl xl:px-5">
@@ -57,6 +62,12 @@
 						<input type="checkbox" class="border-tags" value="Tag7" placeholder="Tag7" name='tag[]'>Tag7<br>
 				</div>
 			</div>
+			<center>
+			<div class="label_black">
+				<label for="custom">Custom_tag_1</label>
+				<input type="text" name='tag[]' placeholder="Custom Tag Field">
+			</div>
+			</center>
 			</center>
 			{{-- <x-media-library-collection name="avatar" /> --}}
 			<center>	
