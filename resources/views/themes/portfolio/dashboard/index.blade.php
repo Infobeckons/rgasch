@@ -43,11 +43,11 @@
 					<h4>Insert Your Media Files Here::</h4>
 				</div>
 				<x-media-library-attachment name="media" rules="mimes:png,jpeg,pdf|max:15360"/>
-				@dump(session()->all())
+				{{-- @dump(session()->all()) --}}
 				{{-- <x-media-library-attachment multiple name="media" max-items="10"  rules="mimes:png,jpg,jpeg,pdf|max:15360" required>
 				</x-media-library-attachment> --}}
 				<div class="tech" for="tags" style="overflow-x:scroll; width:500px; height:150px; z-index:100; ">
-					<div class="second" style="height: 50px; width:auto; z-index:10">
+					<div class="second" style="height: 50px; width:auto; z-index:10; margin-left:10px;float:left;">
 						<input type="checkbox" class="border-tags" value="Tag1" placeholder="Tag1" name='tag[]'>Tag1<br>
 						<input type="checkbox" class="border-tags" value="Tag2" placeholder="Tag2" name='tag[]'>Tag2<br>
 						<input type="checkbox" class="border-tags" value="Tag3" placeholder="Tag3" name='tag[]'>Tag3<br>

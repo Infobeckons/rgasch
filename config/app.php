@@ -192,6 +192,8 @@ return [
         Larapack\VoyagerHooks\VoyagerHooksServiceProvider::class,
         Spatie\MediaLibraryPro\MediaLibraryProServiceProvider::class,
         Spatie\Tags\TagsServiceProvider::class,
+        Barryvdh\Debugbar\ServiceProvider::class,
+
 
         /*
          * Application Service Providers...
@@ -258,6 +260,7 @@ return [
         'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
         'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
         'MediaLibraryPro' => Illuminate\Foundation\Http\FormRequest::class,
+        'Debugbar' => Barryvdh\Debugbar\Facades\Debugbar::class,
     ],
 
 ];
