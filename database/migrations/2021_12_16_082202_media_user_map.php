@@ -14,6 +14,12 @@ class MediaUserMap extends Migration
     public function up()
     {
         //
+        Schema::create('media_user_map', function (Blueprint $table) {
+            $table->id();
+            $table->string('user_id');
+            $table->string('media_id');
+            // $table->timestamps();
+        });
     }
 
     /**
@@ -24,5 +30,6 @@ class MediaUserMap extends Migration
     public function down()
     {
         //
+        Schema::dropIfExists('user_media');
     }
 }
