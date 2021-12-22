@@ -22,7 +22,6 @@
 		float:left;
 	}
 </style>
-{{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> --}}
 <div class="touch-toast-container">
 	@if(Session::get('success'))
 	<div class="alert alert-success">

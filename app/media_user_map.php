@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class media_user_map extends Model
+class Media_User_Map extends Model
 {
     use HasFactory;
     protected $table = "media_user_map";

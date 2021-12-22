@@ -9,13 +9,13 @@ use App\Tag;
 use App\Media_User_Map;
 use WaveFacade;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Route;
-use Spatie\MediaLibraryPro\Dto;
-use Illuminate\Http\UploadedFile;
+//use Illuminate\Support\Facades\Route;
+//use Spatie\MediaLibraryPro\Dto;
+//use Illuminate\Http\UploadedFile;
 // use Spatie\MediaLibraryPro\Rules\Concerns\ValidatesMedia;
-use Illuminate\Foundation\Http\FormRequest;
-use Spatie\MediaLibrary\Conversions\FileManipulator;
-use Spatie\MediaLibraryPro\Models\TemporaryUpload;
+//use Illuminate\Foundation\Http\FormRequest;
+//use Spatie\MediaLibrary\Conversions\FileManipulator;
+//use Spatie\MediaLibraryPro\Models\TemporaryUpload;
 
 class MediaController extends \App\Http\Controllers\Controller
 {
@@ -24,7 +24,7 @@ class MediaController extends \App\Http\Controllers\Controller
     public function index()
     {    
         $clients = Media::latest()->get();
-        return view('index', compact('media'));
+        return view('index', compact('clients'));
     }
 
     public function create()
@@ -55,10 +55,10 @@ class MediaController extends \App\Http\Controllers\Controller
         // return back()->with(['message' => 'Successfully updated user profile', 'message_type' => 'success']);
         return redirect()->route('wave.dashboard')->with('success','Media Successfully Added');
     }
-    public function runtag(){
-     
-        $media = Media::find(1);
-        $media->attachTag('tag 1');
+    public function runtag(Request $request){
+        // $media = Media::find($find);
+        // $media = Media::find(1);
+        // $media->attachTag('tag 1');
         // $tag = Tag::insert(['name' => 'Tag4',
         // 'slug' => 'my-tag4']);
         return redirect()->route('wave.dashboard')->with('success','Media Successfully Added');
