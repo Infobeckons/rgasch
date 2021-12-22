@@ -58,7 +58,7 @@
                                     <li><a href="javascript:void(0)" class="text-primary small">Branding</a></li>
                                     <li class="text-muted small">20th February 2021</li>
                                 </ul>
-                                <img src="images/blog/1.jpg" class="img-fluid rounded" alt="">
+                                <img src="{{asset('themes/portfolio/neo/images/blog/1.jpg')}}" class="img-fluid rounded" alt="">
                                 <div class="mt-4">
                                     <h5><a href="javascript:void(0)" class="title text-dark mb-0">What is special about it?</a></h5>
                                     <p class="text-muted mb-2">Dummy text is also known as 'fill text'. It is said that song composers</p>
@@ -75,7 +75,7 @@
                                     <li><a href="javascript:void(0)" class="text-primary small">Designing</a></li>
                                     <li class="text-muted small">20th February 2021</li>
                                 </ul>
-                                <img src="images/blog/2.jpg" class="img-fluid rounded" alt="">
+                                <img src="{{asset('themes/portfolio/neo/images/blog/2.jpg')}}" class="img-fluid rounded" alt="">
                                 <div class="mt-4">
                                     <h5><a href="javascript:void(0)" class="title text-dark mb-0">The place easily mistaken</a></h5>
                                     <p class="text-muted mb-2">Dummy text is also known as 'fill text'. It is said that song composers</p>
@@ -92,7 +92,7 @@
                                     <li><a href="javascript:void(0)" class="text-primary small">Photography</a></li>
                                     <li class="text-muted small">20th February 2021</li>
                                 </ul>
-                                <img src="images/blog/3.jpg" class="img-fluid rounded" alt="">
+                                <img src="{{asset('themes/portfolio/neo/images/blog/3.jpg')}}" class="img-fluid rounded" alt="">
                                 <div class="mt-4">
                                     <h5><a href="javascript:void(0)" class="title text-dark mb-0">Information you need to know</a></h5>
                                     <p class="text-muted mb-2">Dummy text is also known as 'fill text'. It is said that song composers</p>
@@ -109,7 +109,7 @@
                                     <li><a href="javascript:void(0)" class="text-primary small">Branding</a></li>
                                     <li class="text-muted small">20th February 2021</li>
                                 </ul>
-                                <img src="images/blog/4.jpg" class="img-fluid rounded" alt="">
+                                <img src="{{asset('themes/portfolio/neo/images/blog/4.jpg')}}" class="img-fluid rounded" alt="">
                                 <div class="mt-4">
                                     <h5><a href="javascript:void(0)" class="title text-dark mb-0">What is special about it?</a></h5>
                                     <p class="text-muted mb-2">Dummy text is also known as 'fill text'. It is said that song composers</p>
@@ -126,7 +126,7 @@
                                     <li><a href="javascript:void(0)" class="text-primary small">Designing</a></li>
                                     <li class="text-muted small">20th February 2021</li>
                                 </ul>
-                                <img src="images/blog/5.jpg" class="img-fluid rounded" alt="">
+                                <img src="{{asset('themes/portfolio/neo/images/blog/5.jpg')}}" class="img-fluid rounded" alt="">
                                 <div class="mt-4">
                                     <h5><a href="javascript:void(0)" class="title text-dark mb-0">The place easily mistaken</a></h5>
                                     <p class="text-muted mb-2">Dummy text is also known as 'fill text'. It is said that song composers</p>
@@ -143,7 +143,7 @@
                                     <li><a href="javascript:void(0)" class="text-primary small">Photography</a></li>
                                     <li class="text-muted small">20th February 2021</li>
                                 </ul>
-                                <img src="images/blog/6.jpg" class="img-fluid rounded" alt="">
+                                <img src="{{asset('themes/portfolio/neo/images/blog/6.jpg')}}" class="img-fluid rounded" alt="">
                                 <div class="mt-4">
                                     <h5><a href="javascript:void(0)" class="title text-dark mb-0">Information you need to know</a></h5>
                                     <p class="text-muted mb-2">Dummy text is also known as 'fill text'. It is said that song composers</p>
@@ -160,7 +160,7 @@
                                     <li><a href="javascript:void(0)" class="text-primary small">Branding</a></li>
                                     <li class="text-muted small">20th February 2021</li>
                                 </ul>
-                                <img src="images/blog/7.jpg" class="img-fluid rounded" alt="">
+                                <img src="{{asset('themes/portfolio/neo/images/blog/7.jpg')}}" class="img-fluid rounded" alt="">
                                 <div class="mt-4">
                                     <h5><a href="javascript:void(0)" class="title text-dark mb-0">What is special about it?</a></h5>
                                     <p class="text-muted mb-2">Dummy text is also known as 'fill text'. It is said that song composers</p>
@@ -177,7 +177,7 @@
                                     <li><a href="javascript:void(0)" class="text-primary small">Designing</a></li>
                                     <li class="text-muted small">20th February 2021</li>
                                 </ul>
-                                <img src="images/blog/8.jpg" class="img-fluid rounded" alt="">
+                                <img src="{{asset('themes/portfolio/neo/images/blog/8.jpg')}}" class="img-fluid rounded" alt="">
                                 <div class="mt-4">
                                     <h5><a href="javascript:void(0)" class="title text-dark mb-0">The place easily mistaken</a></h5>
                                     <p class="text-muted mb-2">Dummy text is also known as 'fill text'. It is said that song composers</p>
